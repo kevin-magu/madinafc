@@ -11,4 +11,13 @@ body {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
+  .homepage-wrapper{
+    min-height: 90vh;
+    background-color: #eeeee1;
+    background: url(../images/hero-page-team-image.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
   

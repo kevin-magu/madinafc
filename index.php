@@ -10,6 +10,8 @@
     <title>Home</title>
 </head>
 <body>
-    
+    <section class="homepage-wrapper">
+
+    </section>
 </body>
 </html>
