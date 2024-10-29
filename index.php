@@ -3,14 +3,15 @@
 <head>
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="./styles/common-styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 </head>
 <body>
-    <section class="homepage-wrapper">
+<section class="homepage-wrapper">
     <?php include 'includes/navbar.html' ?>
-        <div class="homepage-overlay"></div>
+        <div class="section-overlay"></div>
         <div class="club-name-wrapper">
                 <p class="club-name">
                     MADINA <span> FC</span>     
@@ -52,9 +53,12 @@
                 <a href=""><button>Recent Matches</button></a>
                 <a href=""><button>Support Us</button></a>
             </div>
-    </section>
-    <script src="./scripts/index.js">
+</section>
 
-    </script>
+<section class="about-madina-wrapper">
+    
+</section>
+
+<script src="./scripts/index.js"></script>    
 </body>
 </html>
