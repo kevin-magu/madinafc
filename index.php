@@ -24,7 +24,22 @@
                 <p class="title">Upcoming Match</p>
                 <div class="card">
                     <p class="league-name">Wajir County League</p>
+                    <div class="card-center-wrapper">
+                        <div class="team-and-logo">
+                            <span>Madina FC</span>
+                            
+                            <div class="hero-card-team-logo hero-card-team-logo-home" style="background-image: url(./images/madina-logo.png)">
+                            <div class="team-logo-overlay">P.FC</div>
+                            </div>
+                        </div>
+                        <p class="hero-card-vs">VS</p>
 
+                        <div class="hero-card-team-logo team-and-logo-away" >
+                        <div class="team-logo-overlay">P.FC</div>
+                        </div>
+                    </div>
+                    <p class="hero-match-date"></p>
+                    <p class="hero-match-location"></p>
 
                 </div>
             </div>

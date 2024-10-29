@@ -102,7 +102,24 @@ body {
   justify-content: center;
   opacity: 1;
   font-size: 14px;
-  
+}
+.card-center-wrapper{
+  display: flex;
+  justify-content: space-evenly;
+}
+.team-and-logo{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.hero-card-team-logo{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 
   
