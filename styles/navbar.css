@@ -12,11 +12,26 @@ body {
       monospace;
   }
 
+  button{
+    width: fit-content;
+    padding: 10px;
+    border-radius: 2px;
+    background-color: #C8351C;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 2;
+  }
+  button:hover{
+    background-color: #9c2a16;
+  }
+
 nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    background-color: #C8351C;
     height: 70px;
 }
 nav .club-logo-wrapper{
@@ -27,13 +42,18 @@ nav .club-logo-wrapper{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    margin-right: 40px;
 }
 nav a{
     text-decoration: none;
     color: white;
     width: fit-content;
     margin-right: 40px;
-    font-size: 16px;
+    font-size: 15px;
+    font-weight: bold;
+}
+nav a:hover{
+  opacity: 70%;
 }
 nav ul{
     display: flex;
