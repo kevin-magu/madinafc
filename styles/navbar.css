@@ -28,10 +28,11 @@ body {
   }
 
 nav{
+    position: absolute;
+    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #C8351C;
     height: 70px;
 }
 nav .club-logo-wrapper{
