@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/common-styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -56,7 +56,23 @@
 </section>
 
 <section class="about-madina-wrapper">
-    
+    <p class="about-us-title">ABOUT US</p>
+    <p class="about-us-context">
+        Founded with a passion for football and community spirit, Madina FC is more than just
+        a football club. We are a family united by our love for the beautiful game, striving to
+        foster talent, teamwork, and sportsmanship. Established in [Year], we have grown from
+        humble beginnings into a competitive force, providing opportunities for players of all
+        ages and skill levels to thrive both on and off the field.
+        At Madina FC, we believe in nurturing future stars while building strong community
+        ties. Whether you're here to play, support, or be part of something bigger, you're
+        always welcome. Join us on this journey, where every kick counts and every match
+        brings us closer together.
+    </p>
+    <button>Read More</button>
+</section>
+
+<section class="upcoming-matches-wrapper">
+    <p class="section-title">Upcoming Matches & Results</p>
 </section>
 
 <script src="./scripts/index.js"></script>    
