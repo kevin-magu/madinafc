@@ -201,7 +201,7 @@ body {
 .about-us-title::before{
   content: '';
   height: 5px;
-  width: 65%;
+  width: 100%;
   background-color: #C8351C;
   z-index: 4;
   position: absolute;

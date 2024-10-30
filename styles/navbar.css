@@ -47,19 +47,3 @@ nav ul{
     display: flex;
     list-style: none; 
 }
-.team-logo-overlay{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-color: #1c1c1c;
-  color: #eeeeed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 11px;
-  font-weight: bold;
-  z-index: 1;
-  border-radius: 50%;
-}

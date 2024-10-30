@@ -83,14 +83,14 @@
                 <div class="team-name-and-logo">
                     <P>Home Team</P>
                     <div class="home-team-logo card-team-circle-logo" style="background-image: url(./images/madina-logo.png)">
-                        <div class="team-logo-overlay"></div>
+                        <div class="card-team-logo-overlay"></div>
                     </div>
                 </div>
                 <p class="vs-div">VS</p>
                 <div class="team-name-and-logo">
                     <p>Away Team</p>
                     <div class="away-team-logo card-team-circle-logo">
-                        <div class="team-logo-oerlay"></div>
+                        <div class="card-team-logo-overlay"></div>
                     </div>
                 </div>    
             </div>

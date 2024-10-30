@@ -1,25 +1,29 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function(){
     const overlay = document.querySelector('.team-logo-overlay');
     const clubLogo = document.querySelector('.team-circle-logo');
-    const circleLogo = document.querySelector('.card-team-circle-logo');
 
-    // Check if elements exist and have background images set
-    const clubLogoImage = window.getComputedStyle(clubLogo).backgroundImage;
-    const circleLogoImage = window.getComputedStyle(circleLogo).backgroundImage;
+    const cardLogo = document.querySelector('.card-team-circle-logo');
+    const cardOverlay = document.querySelector('.card-team-logo-overlay')
+    
 
-    // Preload the background images if they are set
-    const img = new Image();
 
-    if (clubLogoImage && clubLogoImage !== 'none') {
-        img.src = clubLogoImage.replace(/url\(["']?/, '').replace(/["']?\)$/, '');
-    } else if (circleLogoImage && circleLogoImage !== 'none') {
-        img.src = circleLogoImage.replace(/url\(["']?/, '').replace(/["']?\)$/, '');
-    }
+    //preload the bg image -- for circular logos
+    
+    const img = new Image ()
+ //   const cardImage = new Image () 
+    img.src = clubLogo.style.backgroundImage.replace(/url\(["']?/, '').replace(/["']?\)$/, '');
 
-    // Hide overlay after the image is loaded
-    img.onload = function() {
+    const circleLogo= new Image ()
+    circleLogo.src = cardLogo.style.backgroundImage.replace(/url\(["']?/, '').replace(/["']?\)$/, '');
+    
+
+    img.onload = function(){
         overlay.style.display = 'none';
+     //   cardOverlay.style.display = 'none'
+    }
+    circleLogo.onload = function(){
+        cardOverlay.style.display = 'none';
     }
 
-    console.log("Scripts are working");
+    console.log("scripts are working");
 });
