@@ -237,19 +237,22 @@ body {
 }
 .upcoming-match-card{
   width: 300px;
-  height: 400px;
+  height: 300px;
   background-color: white;
   position: relative;
   display: flex;
   flex-direction: column;
   text-align: center;
+  border-radius: 3px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+
 }
 .upcoming-match-card .leage-title{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 5px;
+  margin-top: 20px;
   text-transform: uppercase;
   font-size: 15px;
   font-weight: bold;
@@ -257,4 +260,37 @@ body {
 .match-date, .match-time-and-place{
   margin-top: 5px;
   font-weight: bold;
+}
+.card-team-circle-logo{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.upcoming-match-card .teams-wrapper{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+  height: 120px;
+}
+.upcoming-match-card .team-name-and-logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 120px;
+  justify-content: space-evenly;
+}
+.upcoming-match-card .vs-div{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  font-size: x-large;
+  font-weight: bolder;
+  color: #1c1c1c;
 }
