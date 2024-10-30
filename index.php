@@ -82,7 +82,7 @@
             <div class="teams-wrapper">
                 <div class="team-name-and-logo">
                     <P>Home Team</P>
-                    <div class="home-team-logo card-team-circle-logo" style="background: url(./images/madina-logo.png)">
+                    <div class="home-team-logo card-team-circle-logo" style="background-image: url(./images/madina-logo.png)">
                         <div class="team-logo-overlay"></div>
                     </div>
                 </div>
