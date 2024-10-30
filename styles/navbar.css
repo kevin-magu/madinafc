@@ -12,20 +12,7 @@ body {
       monospace;
   }
 
-  button{
-    width: fit-content;
-    padding: 10px;
-    border-radius: 2px;
-    background-color: #C8351C;
-    color: white;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    z-index: 2;
-  }
-  button:hover{
-    background-color: #9c2a16;
-  }
+  
 
 nav{
     position: absolute;

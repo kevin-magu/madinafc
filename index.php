@@ -68,13 +68,23 @@
         always welcome. Join us on this journey, where every kick counts and every match
         brings us closer together.
     </p>
-    <button>Read More</button>
+    <button>Read More ...</button>
 </section>
 
 <section class="upcoming-matches-wrapper">
     <p class="section-title">Upcoming Matches & Results</p>
-    <div class="homepage-results-cards-wrapper">
-        .
+    <p class="section-title section-subtitle">Upcoming Fixtures</p>
+    <div class="homepage-upcoming-match-cards-wrapper">
+        <div class="upcoming-match-card">
+            <p class="leage-title"></p>
+            <p class="match-date"></p>
+            <p class="match-time-and-place"></p>
+            <div class="teams-wrapper">
+                <div class="home-team-logo">
+                <div class="team-logo-oerlay">P.FC</div>
+                </div>
+            </div>
+        </div>
     </div>
 
     

@@ -19,11 +19,31 @@ body {
     scrollbar-width: thin;
     scrollbar-color: #888 #f1f1f1;
 }
+
+button{
+    width: fit-content;
+    padding: 10px;
+    border-radius: 2px;
+    background-color: #C8351C;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 2;
+  }
+  button:hover{
+    background-color: #9c2a16;
+  }
+  
 .section-title{
     display: flex;
     justify-content: center;
     transform: translateY(10px);
     font-size: 18px;
     font-weight: bold;
-
+    position: absolute;
+    top: 40px;
+}
+.section-subtitle{
+    margin-top: 40px;
 }
