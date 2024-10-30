@@ -76,12 +76,12 @@
     <p class="section-title section-subtitle">Upcoming Fixtures</p>
     <div class="homepage-upcoming-match-cards-wrapper">
         <div class="upcoming-match-card">
-            <p class="leage-title"></p>
-            <p class="match-date"></p>
-            <p class="match-time-and-place"></p>
+            <p class="leage-title">Wajir Championships</p>
+            <p class="match-date">Sunday 12th November 2024</p>
+            <p class="match-time-and-place">15.00, Wajir Field</p>
             <div class="teams-wrapper">
-                <div class="home-team-logo">
-                <div class="team-logo-oerlay">P.FC</div>
+                <div class="home-team-logo team-circle-logo">
+                <div class="team-logo-oerlay"></div>
                 </div>
             </div>
         </div>
