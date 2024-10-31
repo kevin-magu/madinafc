@@ -144,7 +144,11 @@
     <p class="section-subtitle">Recent Match Results</p>
 
     <div class="match-result-wrapper">
-        
+        <div class="match-result-card">
+            <p class="leage-title">Wajir Championships</p>
+            <p class="match-date">Sunday 12th November 2024</p>
+            <p class="match-time-and-place">15.00, Wajir Field</p>
+        </div>
     </div>
 </section>
 

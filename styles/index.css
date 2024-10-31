@@ -120,10 +120,7 @@ body {
   z-index: 2;
 }
 
-.hero-upcoming-and-match-results-wrapper .card:hover{
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
-  cursor: pointer;
-}
+
 .hero-upcoming-and-match-results-wrapper .league-name{
   display: flex;
   justify-content: center;
@@ -301,4 +298,17 @@ body {
 
 .section-subtitle{
   font-weight: bold;
+}
+
+.match-result-wrapper{
+  margin-top: 40px;
+}
+
+.match-result-card{
+  text-align: center;
+}
+
+.match-result-card .leage-title{
+  text-transform: capitalize;
+  color: red;
 }
