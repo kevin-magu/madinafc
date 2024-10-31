@@ -234,6 +234,8 @@ body {
 
 .homepage-upcoming-match-cards-wrapper{
   display: flex;
+  width: 100%;
+  justify-content: space-evenly;
 }
 .upcoming-match-card{
   width: 300px;
@@ -283,6 +285,8 @@ body {
   align-items: center;
   height: 120px;
   justify-content: space-evenly;
+  text-transform: capitalize;
+  font-size: 13px;
 }
 .upcoming-match-card .vs-div{
   height: 100%;
@@ -293,4 +297,8 @@ body {
   font-size: x-large;
   font-weight: bolder;
   color: #1c1c1c;
+}
+
+.section-subtitle{
+  font-weight: bold;
 }

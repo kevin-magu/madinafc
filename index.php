@@ -75,29 +75,77 @@
     <p class="section-title">Upcoming Matches & Results</p>
     <p class="section-title section-subtitle">Upcoming Fixtures</p>
     <div class="homepage-upcoming-match-cards-wrapper">
+
         <div class="upcoming-match-card">
             <p class="leage-title">Wajir Championships</p>
             <p class="match-date">Sunday 12th November 2024</p>
             <p class="match-time-and-place">15.00, Wajir Field</p>
             <div class="teams-wrapper">
                 <div class="team-name-and-logo">
-                    <P>Home Team</P>
+                    <P>MADINA FC</P>
                     <div class="home-team-logo card-team-circle-logo" style="background-image: url(./images/madina-logo.png)">
                         <div class="card-team-logo-overlay"></div>
                     </div>
                 </div>
                 <p class="vs-div">VS</p>
                 <div class="team-name-and-logo">
-                    <p>Away Team</p>
+                    <p>HOMEBOYS FC</p>
                     <div class="away-team-logo card-team-circle-logo">
-                        <div class="card-team-logo-overlay"></div>
+                        <div class="card-team-logo-overlay">H.FC</div>
                     </div>
                 </div>    
             </div>
         </div>
+
+        <div class="upcoming-match-card">
+            <p class="leage-title">Wajir Championships</p>
+            <p class="match-date">Sunday 12th November 2024</p>
+            <p class="match-time-and-place">15.00, Wajir Field</p>
+            <div class="teams-wrapper">
+                <div class="team-name-and-logo">
+                    <P>MADINA FC</P>
+                    <div class="home-team-logo card-team-circle-logo" style="background-image: url(./images/madina-logo.png)">
+                        <div class="card-team-logo-ovrlay"></div>
+                    </div>
+                </div>
+                <p class="vs-div">VS</p>
+                <div class="team-name-and-logo">
+                    <p>PEACE FC</p>
+                    <div class="away-team-logo card-team-circle-logo">
+                        <div class="card-team-logo-overlay">P.FC</div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+
+        <div class="upcoming-match-card">
+            <p class="leage-title">Wajir Championships</p>
+            <p class="match-date">Sunday 12th November 2024</p>
+            <p class="match-time-and-place">15.00, Wajir Field</p>
+            <div class="teams-wrapper">
+                <div class="team-name-and-logo">
+                    <P>MADINA FC</P>
+                    <div class="home-team-logo card-team-circle-logo" style="background-image: url(./images/madina-logo.png)">
+                        <div class="card-team-logo-ovrlay"></div>
+                    </div>
+                </div>
+                <p class="vs-div">VS</p>
+                <div class="team-name-and-logo">
+                    <p>HASHIF FC</p>
+                    <div class="away-team-logo card-team-circle-logo">
+                        <div class="card-team-logo-overlay">H.FC</div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+
     </div>
 
-    
+    <p class="section-subtitle">Recent Match Results</p>
+
+    <div class="match-result-wrapper">
+        
+    </div>
 </section>
 
 <script src="./scripts/index.js"></script>    
