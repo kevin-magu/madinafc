@@ -366,3 +366,8 @@ body {
 .result-section-button{
   margin-bottom: 40px;
 }
+
+/* Meet the team section */
+.meet-the-team-section{
+  min-height: 100vh;
+}

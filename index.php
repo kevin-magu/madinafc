@@ -213,6 +213,10 @@
     </div>
 </section>
 
+<section class="meet-the-team-section">
+    
+</section>
+
 
 <script src="./scripts/index.js"></script>    
 </body>
