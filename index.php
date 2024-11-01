@@ -145,9 +145,10 @@
 
     <div class="match-result-wrapper">
         <div class="match-result-card">
-            <p class="leage-title">Wajir Championships</p>
-            <p class="match-date">Sunday 12th November 2024</p>
-            <p class="match-time-and-place">15.00, Wajir Field</p>
+            <p class="match-result-leage-title">Wajir Championships</p>
+            <p class="result-match-date">Sunday 12th November 2024</p>
+            <p class="result-match-time-and-place">15.00, Wajir Field</p>
+
             <div class="teams-and-score-wrapper">
                 <div class="results-card-team-wrapper">
                     <p class="home-team-name">Madina FC</p>
@@ -159,9 +160,59 @@
                     <div class="away-team-circle-logo circle-logo"></div>
                 </div>
             </div> 
+            <div class="element-wrapper">
+            <button class="transparent-button">Match Review</button>
+            </div>
+        </div>
+
+        <div class="match-result-card">
+            <p class="match-result-leage-title">Wajir Championships</p>
+            <p class="result-match-date">Sunday 12th November 2024</p>
+            <p class="result-match-time-and-place">15.00, Wajir Field</p>
+
+            <div class="teams-and-score-wrapper">
+                <div class="results-card-team-wrapper">
+                    <p class="home-team-name">Madina FC</p>
+                    <div class="home-team-circle-logo circle-logo"></div>
+                </div>
+                <p class="score-wrapper">3-1</p>
+                <div class="results-card-team-wrapper">
+                    <p class="away-team-name">Peace FC</p>
+                    <div class="away-team-circle-logo circle-logo"></div>
+                </div>
+            </div> 
+            <div class="element-wrapper">
+            <button class="transparent-button">Match Review</button>
+            </div>
+        </div>
+
+        <div class="match-result-card">
+            <p class="match-result-leage-title">Wajir Championships</p>
+            <p class="result-match-date">Sunday 12th November 2024</p>
+            <p class="result-match-time-and-place">15.00, Wajir Field</p>
+
+            <div class="teams-and-score-wrapper">
+                <div class="results-card-team-wrapper">
+                    <p class="home-team-name">Madina FC</p>
+                    <div class="home-team-circle-logo circle-logo"></div>
+                </div>
+                <p class="score-wrapper">3-1</p>
+                <div class="results-card-team-wrapper">
+                    <p class="away-team-name">Peace FC</p>
+                    <div class="away-team-circle-logo circle-logo"></div>
+                </div>
+            </div> 
+            <div class="element-wrapper">
+            <button class="transparent-button">Match Review</button>
+            </div>
         </div>
     </div>
+
+    <div class="element-wrapper">
+        <button class="transparent-button result-section-button">View All Match Results</button>
+    </div>
 </section>
+
 
 <script src="./scripts/index.js"></script>    
 </body>

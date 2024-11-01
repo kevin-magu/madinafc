@@ -35,7 +35,23 @@ button{
     background-color: #9c2a16;
   }
 
-  .team-logo-overlay, .card-team-logo-overlay{
+.transparent-button{
+    width: fit-content;
+    border: 1px #1c1c1c solid;
+    background-color: #eeeeed;
+    color: #1c1c1c;
+}
+.transparent-button:hover{
+    background-color: #1c1c1c;
+    color: #eeeeed;
+}
+
+.element-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.team-logo-overlay, .card-team-logo-overlay{
     position: absolute;
     top: 0;
     bottom: 0;
@@ -55,14 +71,13 @@ button{
 .section-title{
     display: flex;
     justify-content: center;
-    transform: translateY(10px);
     font-size: 18px;
     font-weight: bold;
-    top: 20px;
-    position: absolute;
+    margin-top: 20px;
 }
 .section-subtitle{
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .circle-logo{

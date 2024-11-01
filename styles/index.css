@@ -300,28 +300,43 @@ body {
 .homepage-results-section-subtitle{
   margin-top: 40px;
 }
-
+/* match result  */
 .match-result-wrapper{
   margin-top: 40px;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-bottom: 60px;
 }
 
 
 .match-result-card{
+  position: relative;
+  background-color: white;
+  border-radius: 3px;
   text-align: center;
   width: 300px;
-  height: 500px;
+  height: 370px;
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-.match-result-card .leage-title{
-  text-transform: capitalize;
-  color: red;
+.match-result-leage-title{
+  padding-top: 20px;
+  text-transform: uppercase;
 }
+
+.match-result-leage-title, .result-match-date , .result-match-time-and-place{
+  font-weight: bold;
+}
+
 .teams-and-score-wrapper{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
 }
+
+
 .results-card-team-wrapper{
   display: flex;
   flex-direction: column;
@@ -331,11 +346,23 @@ body {
 
 } 
 .score-wrapper{
-  width: 100px;
+  width: 150px;
   background-color: #1c1c1c;
   color: white;
   border-radius: 3px;
-  padding: 7px;
+  padding: 6px;
   margin-top: 20px;
-
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.match-result-card .transparent-button{
+  background-color: white;
+  color: #1c1c1c;
+  position: absolute;
+  margin: 0;
+  bottom: 20px;
+}
+.result-section-button{
+  margin-bottom: 40px;
 }
