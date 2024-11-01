@@ -285,6 +285,7 @@ body {
   text-transform: capitalize;
   font-size: 13px;
 }
+
 .upcoming-match-card .vs-div{
   height: 100%;
   display: flex;
@@ -296,19 +297,45 @@ body {
   color: #1c1c1c;
 }
 
-.section-subtitle{
-  font-weight: bold;
+.homepage-results-section-subtitle{
+  margin-top: 40px;
 }
 
 .match-result-wrapper{
   margin-top: 40px;
 }
 
+
 .match-result-card{
   text-align: center;
+  width: 300px;
+  height: 500px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
 }
 
 .match-result-card .leage-title{
   text-transform: capitalize;
   color: red;
+}
+.teams-and-score-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.results-card-team-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+
+} 
+.score-wrapper{
+  width: 100px;
+  background-color: #1c1c1c;
+  color: white;
+  border-radius: 3px;
+  padding: 7px;
+  margin-top: 20px;
+
 }

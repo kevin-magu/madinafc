@@ -73,7 +73,7 @@
 
 <section class="upcoming-matches-wrapper">
     <p class="section-title">Upcoming Matches & Results</p>
-    <p class="section-title section-subtitle">Upcoming Fixtures</p>
+    <p class="section-subtitle">Upcoming Fixtures</p>
     <div class="homepage-upcoming-match-cards-wrapper">
 
         <div class="upcoming-match-card">
@@ -141,13 +141,24 @@
 
     </div>
 
-    <p class="section-subtitle">Recent Match Results</p>
+    <p class="homepage-results-section-subtitle">Recent Match Results</p>
 
     <div class="match-result-wrapper">
         <div class="match-result-card">
             <p class="leage-title">Wajir Championships</p>
             <p class="match-date">Sunday 12th November 2024</p>
             <p class="match-time-and-place">15.00, Wajir Field</p>
+            <div class="teams-and-score-wrapper">
+                <div class="results-card-team-wrapper">
+                    <p class="home-team-name">Madina FC</p>
+                    <div class="home-team-circle-logo circle-logo"></div>
+                </div>
+                <p class="score-wrapper">3-1</p>
+                <div class="results-card-team-wrapper">
+                    <p class="away-team-name">Peace FC</p>
+                    <div class="away-team-circle-logo circle-logo"></div>
+                </div>
+            </div> 
         </div>
     </div>
 </section>
