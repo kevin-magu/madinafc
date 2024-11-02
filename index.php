@@ -215,6 +215,16 @@
 
 <section class="meet-the-team-section">
     <p class="section-title">MEET THE TEAM</p>
+
+    <div class="squad-layout-and-list-wrapper">
+        <div class="section1">
+            <div class="before-squad-load"><p>Squad is Coming From The Dressing Room</p>
+            <img src="./images/squad-layout.png" alt="Madina squad layout" class="squad-layout-pic">
+        </div>
+        <div class="section2">
+
+        </div>
+    </div>
 </section>
 
 

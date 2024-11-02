@@ -75,7 +75,19 @@ button{
     font-weight: bold;
     margin-top: 20px;
     color: #C8351C;
+    position: relative;
 }
+
+.section-title::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    background-color: #C8351C;
+    width: 100px;
+    height: 2px;
+    border-radius: 5px;
+}
+
 .section-subtitle{
     margin-bottom: 20px;
     margin-top: 20px;

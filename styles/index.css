@@ -373,5 +373,28 @@ body {
   background-color: #eeeeed;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.squad-layout-and-list-wrapper{
+  display: flex;
+  margin-top: 40px;
+}
+.squad-layout-and-list-wrapper .section1{
+  width: 550px;
+  height: 700px;
+  border-radius: 4px;
+  margin-left: 40px;
+  position: relative;
+}
+
+.squad-layout-and-list-wrapper .section1 .squadLayoutOverlay{
+  height: 700px;
+  width: 550px;
+  background-color: #1c1c1c;
+}
+
+.squad-layout-and-list-wrapper .section1 img{
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
 }
