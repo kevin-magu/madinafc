@@ -72,7 +72,7 @@
 </section>
 
 <section class="upcoming-matches-wrapper">
-    <p class="section-title">Upcoming Matches & Results</p>
+    <p class="section-title">UPCOMING MATCHES & RESULTS</p>
     <p class="section-subtitle">Upcoming Fixtures</p>
     <div class="homepage-upcoming-match-cards-wrapper">
 
@@ -214,7 +214,7 @@
 </section>
 
 <section class="meet-the-team-section">
-    
+    <p class="section-title">MEET THE TEAM</p>
 </section>
 
 

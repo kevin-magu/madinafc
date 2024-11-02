@@ -370,4 +370,8 @@ body {
 /* Meet the team section */
 .meet-the-team-section{
   min-height: 100vh;
+  background-color: #eeeeed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
