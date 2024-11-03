@@ -199,7 +199,7 @@ body {
   content: '';
   height: 5px;
   width: 100%;
-  background-color: #C8351C;
+  background-color: red;
   z-index: 4;
   position: absolute;
   bottom: 2px;
@@ -378,18 +378,19 @@ body {
 .squad-layout-and-list-wrapper{
   display: flex;
   margin-top: 40px;
+  justify-content: center;
 }
 .squad-layout-and-list-wrapper .section1{
-  width: 550px;
+  width: 500px;
   height: 700px;
   border-radius: 4px;
   margin-left: 40px;
   position: relative;
 }
 
-.squad-layout-and-list-wrapper .section1 .squadLayoutOverlay{
-  height: 700px;
-  width: 550px;
+.squad-layout-and-list-wrapper .section1 .before-squad-load{
+  height: 600px;
+  width: 450px;
   background-color: #1c1c1c;
 }
 
@@ -397,4 +398,8 @@ body {
   height: 100%;
   width: 100%;
   border-radius: 4px;
+}
+
+.squad-layout-and-list-wrapper .section2{
+  width: 50%;
 }

@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", function(){
     const overlay = document.querySelector('.team-logo-overlay');
     const clubLogo = document.querySelector('.team-circle-logo');
-    const squadLayoutPic = document.querySelector('.squad-layout-pic');
-    const squadLayoutOverlay = document.querySelector('.before-squad-load');
+    const image = document.querySelector('.squad-layout-pic');
+    const imageOverlay = document.querySelector('.before-squad-load');
+
 
     // Preload the background image for circular logo
     if (clubLogo) {
@@ -20,13 +21,20 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 
     // Check if squadLayoutPic is an <img> element
-    if (squadLayoutPic && squadLayoutPic.tagName === "IMG") {
-        squadLayoutPic.onload = function() {
-            if (squadLayoutOverlay) squadLayoutOverlay.style.display = 'none';
-        };
-    } else {
-        console.warn("squadLayoutPic is not an <img> element, so 'onload' will not work.");
-    }
+   
+  if (image.complete && image.naturalHeight !== 0) {
+      console.log("Image is fully downloaded.");
+      imageOverlay.style.display = 'none'
+      
+  } else {
+      image.onload = () => {
+          console.log("Image has finished downloading.");
+          imageOverlay.style.display = 'none'
+      };
+      image.onerror = () => {
+          console.log("Error: Image could not be loaded.");
+      };
+  }
 
     console.log("scripts are working");
 });

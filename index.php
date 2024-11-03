@@ -218,11 +218,177 @@
 
     <div class="squad-layout-and-list-wrapper">
         <div class="section1">
-            <div class="before-squad-load"><p>Squad is Coming From The Dressing Room</p>
+            <div class="before-squad-load"><p>Squad is Coming From The Dressing Room</p> </div>
             <img src="./images/squad-layout.png" alt="Madina squad layout" class="squad-layout-pic">
         </div>
         <div class="section2">
+            <p>MANAGEMENT & COACHES</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>NAME</th>
+                        <th>POSITION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Farah Ali</td>
+                        <td>President</td>
+                    </tr>
+                </tbody>
+            </table>
 
+            <table>
+                <thead>
+                    <tr>
+                        <th>PLAYER NAME</th>
+                        <th>POSITION</th>
+                        <th>Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Abdimalik Said (Fakat)</td>
+                        <td>Goal Keeper</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Mohamed Hassan (DIDA) </td>
+                        <td>Right Back</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Abdisalan Khalif </td>
+                        <td>Right Back</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Abdisalan Khalif </td>
+                        <td>Right Back</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Suleiman (Sule) </td>
+                        <td>Left Back</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Mendy</td>
+                        <td>Left Back</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Dalacow</td>
+                        <td>Center Back</td>
+                        <td>4/5</td>
+                    </tr>
+                    <tr>
+                        <td>Gaba</td>
+                        <td>Center Back</td>
+                        <td>4/5</td>
+                    </tr>
+                    <tr>
+                        <td>Hantla</td>
+                        <td>Center Back</td>
+                        <td>4/5</td>
+                    </tr>
+                    <tr>
+                        <td>Abdirashid (Shithey)</td>
+                        <td>Center Back</td>
+                        <td>4/5</td>
+                    </tr>
+                    <tr>
+                        <td>Janavaro Adow</td>
+                        <td>Center Back</td>
+                        <td>4/5</td>
+                    </tr>
+                    <tr>
+                        <td>Abdullahi Adan </td>
+                        <td>Defence Mid</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Yussuf Kassim (Lahm)</td>
+                        <td>Defence Mid</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td> Captain Carif</td>
+                        <td>Defence Mid</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Zacky Rashid </td>
+                        <td>Center Mid</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>Captain Mac Alister </td>
+                        <td>Center Mid</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>Ali Modric</td>
+                        <td>Center Mid</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>Zakaria Abdirahman (Zakow)</td>
+                        <td>Center Mid</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>Adil Salât </td>
+                        <td>Right Mid</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>Aguero Warsame </td>
+                        <td>Right Mid</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>Marwan Sheikh (Roro)</td>
+                        <td>Right Mid</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>Abukar Ali (Michu)</td>
+                        <td>Attack Mid</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Mohamed Shukri Hussein </td>
+                        <td>Attack Mid</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Aguero </td>
+                        <td>Center Forwards</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>Muktar Osmihen/td>
+                        <td>Center Forwards</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>Abukar Bare</td>
+                        <td>Center Forwards</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>Jibril Ali Oma</td>
+                        <td>Left Wings</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>Sadam Osman Madobe </td>
+                        <td>Left Wing</td>
+                        <td>11</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </section>

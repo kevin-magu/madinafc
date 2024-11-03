@@ -24,7 +24,7 @@ button{
     width: fit-content;
     padding: 10px;
     border-radius: 2px;
-    background-color: #C8351C;
+    background-color: red;
     color: white;
     border: none;
     outline: none;
@@ -32,7 +32,7 @@ button{
     z-index: 2;
   }
   button:hover{
-    background-color: #9c2a16;
+    background-color: #c72408;
   }
 
 .transparent-button{
@@ -74,7 +74,7 @@ button{
     font-size: 18px;
     font-weight: bold;
     margin-top: 20px;
-    color: #C8351C;
+    color: red;
     position: relative;
 }
 
@@ -82,7 +82,7 @@ button{
     content: '';
     position: absolute;
     bottom: -5px;
-    background-color: #C8351C;
+    background-color: rgb(192, 15, 15);
     width: 100px;
     height: 2px;
     border-radius: 5px;
