@@ -217,12 +217,9 @@
     <p class="section-title">MEET THE TEAM</p>
 
     <div class="squad-layout-and-list-wrapper">
-        <div class="section1">
-            <div class="before-squad-load"><p>Squad is Coming From The Dressing Room</p> </div>
-            <img src="./images/squad-layout.png" alt="Madina squad layout" class="squad-layout-pic">
-        </div>
+        
         <div class="section2">
-            <p>MANAGEMENT & COACHES</p>
+            <p class="table-title">MANAGEMENT & COACHES</p>
             <table>
                 <thead>
                     <tr>
@@ -237,86 +234,99 @@
                     </tr>
                 </tbody>
             </table>
+            <p class="table-title table-title2">SQUAD</p>
+            <div class="squad-table">
+                <table class="squad-table1">
+                    <thead>
+                        <tr>
+                            <th>PLAYER NAME</th>
+                            <th>POSITION</th>
+                            <th>Number</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Abdimalik Said (Fakat)</td>
+                            <td>Goal Keeper</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Mohamed Hassan (DIDA) </td>
+                            <td>Right Back</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Abdisalan Khalif </td>
+                            <td>Right Back</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Abdisalan Khalif </td>
+                            <td>Right Back</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Suleiman (Sule) </td>
+                            <td>Left Back</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Mendy</td>
+                            <td>Left Back</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Dalacow</td>
+                            <td>Center Back</td>
+                            <td>4/5</td>
+                        </tr>
+                        <tr>
+                            <td>Gaba</td>
+                            <td>Center Back</td>
+                            <td>4/5</td>
+                        </tr>
+                        <tr>
+                            <td>Hantla</td>
+                            <td>Center Back</td>
+                            <td>4/5</td>
+                        </tr>
+                        <tr>
+                            <td>Abdirashid (Shithey)</td>
+                            <td>Center Back</td>
+                            <td>4/5</td>
+                        </tr>
+                        <tr>
+                            <td>Janavaro Adow</td>
+                            <td>Center Back</td>
+                            <td>4/5</td>
+                        </tr>
+                        <tr>
+                            <td>Abdullahi Adan </td>
+                            <td>Defence Mid</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>Yussuf Kassim (Lahm)</td>
+                            <td>Defence Mid</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td> Captain Carif</td>
+                            <td>Defence Mid</td>
+                            <td>6</td>
+                        </tr>
+                    </tbody>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>PLAYER NAME</th>
-                        <th>POSITION</th>
-                        <th>Number</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Abdimalik Said (Fakat)</td>
-                        <td>Goal Keeper</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>Mohamed Hassan (DIDA) </td>
-                        <td>Right Back</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>Abdisalan Khalif </td>
-                        <td>Right Back</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>Abdisalan Khalif </td>
-                        <td>Right Back</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>Suleiman (Sule) </td>
-                        <td>Left Back</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>Mendy</td>
-                        <td>Left Back</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>Dalacow</td>
-                        <td>Center Back</td>
-                        <td>4/5</td>
-                    </tr>
-                    <tr>
-                        <td>Gaba</td>
-                        <td>Center Back</td>
-                        <td>4/5</td>
-                    </tr>
-                    <tr>
-                        <td>Hantla</td>
-                        <td>Center Back</td>
-                        <td>4/5</td>
-                    </tr>
-                    <tr>
-                        <td>Abdirashid (Shithey)</td>
-                        <td>Center Back</td>
-                        <td>4/5</td>
-                    </tr>
-                    <tr>
-                        <td>Janavaro Adow</td>
-                        <td>Center Back</td>
-                        <td>4/5</td>
-                    </tr>
-                    <tr>
-                        <td>Abdullahi Adan </td>
-                        <td>Defence Mid</td>
-                        <td>6</td>
-                    </tr>
-                    <tr>
-                        <td>Yussuf Kassim (Lahm)</td>
-                        <td>Defence Mid</td>
-                        <td>6</td>
-                    </tr>
-                    <tr>
-                        <td> Captain Carif</td>
-                        <td>Defence Mid</td>
-                        <td>6</td>
-                    </tr>
+                </table>
+                <table class="squad-table2">
+                    <thead>
+                        <tr>
+                            <th>PLAYER NAME</th>
+                            <th>POSITION</th>
+                            <th>NUMBER</th>
+                        </tr>
+                    </thead>
+                    <tbody>
                     <tr>
                         <td>Zacky Rashid </td>
                         <td>Center Mid</td>
@@ -387,9 +397,19 @@
                         <td>Left Wing</td>
                         <td>11</td>
                     </tr>
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
         </div>
+
+        <div class="section1">
+            <div class="before-squad-load"><p>Squad is Coming From The Dressing Room</p> </div>
+            <img src="./images/squad-layout.png" alt="Madina squad layout" class="squad-layout-pic">
+        </div>
+    </div>
+
+    <div class="element-wrapper">
+        <button class="transparent-button">View Squad Layout</button>
     </div>
 </section>
 

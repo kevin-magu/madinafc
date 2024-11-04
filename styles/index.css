@@ -377,15 +377,17 @@ body {
 
 .squad-layout-and-list-wrapper{
   display: flex;
+  flex-direction: column;
   margin-top: 40px;
-  justify-content: center;
+  align-items: center;
 }
 .squad-layout-and-list-wrapper .section1{
-  width: 500px;
-  height: 700px;
+  width: 450px;
+  height: 600px;
   border-radius: 4px;
-  margin-left: 40px;
   position: relative;
+  margin-top: 20px;
+  posit
 }
 
 .squad-layout-and-list-wrapper .section1 .before-squad-load{
@@ -401,5 +403,39 @@ body {
 }
 
 .squad-layout-and-list-wrapper .section2{
-  width: 50%;
+  width: 80%;
+}
+.squad-layout-and-list-wrapper .section2 .squad-table{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.squad-layout-and-list-wrapper .section2 .squad-table1{
+  margin-right: 40px;
+}
+.table-title{
+  font-weight: bold;
+  color: red;
+}
+.table-title2{
+  margin-top: 40px;
+}
+
+.squad-layout-and-list-wrapper .section2 table{
+  border-collapse: collapse;
+  width: 100%;
+}
+.squad-layout-and-list-wrapper .section2 table, th, td {
+  border:  1px solid #dddddd;
+}
+.squad-layout-and-list-wrapper .section2 table th,td {
+  padding: 5px;
+}
+.squad-layout-and-list-wrapper .section2 table th{
+  text-align: left;
+  background-color: #1c1c1c;
+  color: #eeeeed;
+}
+.squad-layout-and-list-wrapper .section2 table, tr:nth-child(even){
+  background-color: #f2f2f2;
 }
