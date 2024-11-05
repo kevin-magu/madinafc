@@ -474,12 +474,17 @@ body {
 /* club news section */
 
 .club-news-wrapper{
-  min-height: 100vh;
   background-color: #eeeeed;
   position: relative;
   display: flex;
   flex-direction: column;
 }
+
+.club-news-wrapper .section-title{
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
 .news-cards-wrapper{
   margin-top: 20px;
   display: flex;
@@ -489,11 +494,44 @@ body {
 .news-cards-wrapper a{
   text-decoration: none;
   color: #eeeeed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .news-cards-wrapper .card{
   width: 300px;
   height: 400px;
   border-radius: 3px;
+  position: relative;
+}
+.news-cards-wrapper .card p{
+  z-index: 5;
+  margin-top: 10px;
+}
+.news-cards-wrapper .card .text-wrapper{
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
+  padding: 9px;
+}
+.news-cards-wrapper .card .news-title{
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.news-cards-wrapper .card .news-short-context, .news-date{
+  font-size: 14px;
+}
 
+.club-news-wrapper button{
+  margin-top: 40px;
+}
+.community-impact-wrapper{
+  min-height: 100vh;
+}
+
+.swiper{
+  height: 600px;
+  width: 500px;
 }
 

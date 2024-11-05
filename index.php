@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/common-styles.css">
@@ -417,41 +423,105 @@
 </section>
 
 <section class="club-news-wrapper">
-<p class="section-title">CLUB NEWS & UPDATES</p>
+    <p class="section-title">CLUB NEWS & UPDATES</p>
 
-<div class="news-cards-wrapper">
-    <a href="" class="card" style="background-color: black;">
-        <p class="news-title">Player of the month</p>
-        <p class="news-short-context">
-            Rashid Abdul has been named the player
-            of the month after scoring 2 hat tricks in 2
-            games!
-        </p>
-        <p class="news-date"></p>
-    </a>
+    <div class="news-cards-wrapper">
+        <a href="" class="card" 
+            style="background: url(./images/player-of-the-month.jpeg); 
+            background-position: center; background-size: cover;">
+            <div class="card-element-overlay"></div>
 
-    <a href="" class="card" style="background-color: black;">
-        <p class="news-title">Player of the month</p>
-        <p class="news-short-context">
-            Rashid Abdul has been named the player
-            of the month after scoring 2 hat tricks in 2
-            games!
-        </p>
-        <p class="news-date"></p>
-    </a>
+            <div class="text-wrapper">
+                <p class="news-title">Player of the month</p>
+                <p class="news-short-context">
+                    Rashid Abdul has been named the player
+                    of the month after scoring 2 hat tricks in 2
+                    games!
+                </p>
+                <p class="news-date">12/11/2024</p>
+            </div>    
+        </a>
 
-    <a href="" class="card" style="background-color: black;">
-        <p class="news-title">Player of the month</p>
-        <p class="news-short-context">
-            Rashid Abdul has been named the player
-            of the month after scoring 2 hat tricks in 2
-            games!
-        </p>
-        <p class="news-date"></p>
-    </a>
-    
+        <a href="" class="card" 
+            style="background: url(./images/player-of-the-month.jpeg); 
+            background-position: center; background-size: cover;">
+            <div class="card-element-overlay"></div>
 
-</div>
+            <div class="text-wrapper">
+                <p class="news-title">Player of the month</p>
+                <p class="news-short-context">
+                    Rashid Abdul has been named the player
+                    of the month after scoring 2 hat tricks in 2
+                    games!
+                </p>
+                <p class="news-date">12/11/2024</p>
+            </div>    
+        </a>
+
+        <a href="" class="card"
+            style="background: url(./images/player-of-the-month.jpeg); 
+            background-position: center; background-size: cover;"
+            >
+            <div class="card-element-overlay"></div>
+
+            <div class="text-wrapper">
+            <p class="news-title">Player of the month</p>
+            <p class="news-short-context">
+                Rashid Abdul has been named the player
+                of the month after scoring 2 hat tricks in 2
+                games!
+            </p>
+            <p class="news-date">12/11/2024</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="element-wrapper open-squad-layout-button-wrapper">
+        <button class="transparent-button">Read More Club News</button> 
+    </div>
+</section>
+
+<section class="community-impact-wrapper">
+    <p class="section-title">COMMUNITY IMPACT</p>
+
+    <div class="swiper-and-context-wrapper">
+        <div class="section1">
+            <!-- Slider main container -->
+            `<div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+            </div>`
+        </div>
+        <div class="section2">
+            <p>At Madina FC, our commitment goes beyond football—we
+                believe in giving back to the community that supports us.
+                Through initiatives like our tree-planting program, we aim to
+                promote environmental sustainability while fostering a
+                sense of responsibility among our players and supporters.
+                By planting trees, we’re not only helping to create greener
+                spaces but also building a legacy of care and stewardship
+                for future generations.
+                We are proud to partner with local organizations and
+                volunteers to make a lasting impact, both on the field and
+                in the world around us.
+            </p>
+        </div>
+    </div>
 </section>
 
 <script src="./scripts/index.js"></script>    
