@@ -417,7 +417,41 @@
 </section>
 
 <section class="club-news-wrapper">
+<p class="section-title">CLUB NEWS & UPDATES</p>
 
+<div class="news-cards-wrapper">
+    <a href="" class="card" style="background-color: black;">
+        <p class="news-title">Player of the month</p>
+        <p class="news-short-context">
+            Rashid Abdul has been named the player
+            of the month after scoring 2 hat tricks in 2
+            games!
+        </p>
+        <p class="news-date"></p>
+    </a>
+
+    <a href="" class="card" style="background-color: black;">
+        <p class="news-title">Player of the month</p>
+        <p class="news-short-context">
+            Rashid Abdul has been named the player
+            of the month after scoring 2 hat tricks in 2
+            games!
+        </p>
+        <p class="news-date"></p>
+    </a>
+
+    <a href="" class="card" style="background-color: black;">
+        <p class="news-title">Player of the month</p>
+        <p class="news-short-context">
+            Rashid Abdul has been named the player
+            of the month after scoring 2 hat tricks in 2
+            games!
+        </p>
+        <p class="news-date"></p>
+    </a>
+    
+
+</div>
 </section>
 
 <script src="./scripts/index.js"></script>    

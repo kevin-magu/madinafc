@@ -45,8 +45,8 @@ document.addEventListener("DOMContentLoaded", function(){
   openSquadLayoutButton.addEventListener('click', function(){
     squadLayoutDiv.style.display = 'flex'
   })
-  window.addEventListener('scroll', function(){
-    squadLayoutDiv.style.display = 'none'
-  })
+//   window.addEventListener('scroll', function(){
+//     squadLayoutDiv.style.display = 'none'
+//   })
     console.log("scripts are working");
 });
