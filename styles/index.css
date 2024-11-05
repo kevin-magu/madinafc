@@ -243,9 +243,11 @@ body {
   flex-direction: column;
   text-align: center;
   border-radius: 3px;
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
-
 }
+.upcoming-match-card:hover{
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
 .upcoming-match-card .leage-title{
   display: flex;
   justify-content: center;
@@ -317,6 +319,8 @@ body {
   text-align: center;
   width: 300px;
   height: 370px;
+}
+.match-result-card:hover{
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
 }
 
@@ -363,6 +367,10 @@ body {
   margin: 0;
   bottom: 20px;
 }
+.open-squad-layout-button-wrapper{
+  gap: 10px;
+}
+
 .result-section-button{
   margin-bottom: 40px;
 }
@@ -380,14 +388,37 @@ body {
   flex-direction: column;
   margin-top: 40px;
   align-items: center;
+  position: relative;
 }
+.meet-the-team-section button{
+  margin-top: 30px;
+}
+
 .squad-layout-and-list-wrapper .section1{
   width: 450px;
   height: 600px;
   border-radius: 4px;
   position: relative;
   margin-top: 20px;
-  posit
+  position: absolute;
+  z-index: 4;
+  display: none;
+}
+
+.squad-layout-and-list-wrapper .section1 .close-squad-layout{
+  cursor: pointer;
+  color: #eeeeed;
+  background-color: red;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  font-weight: bold;
+  top: 0;
+  right: -30px;
 }
 
 .squad-layout-and-list-wrapper .section1 .before-squad-load{
@@ -438,4 +469,10 @@ body {
 }
 .squad-layout-and-list-wrapper .section2 table, tr:nth-child(even){
   background-color: #f2f2f2;
+}
+
+/* club news section */
+
+.club-news-wrapper{
+  
 }

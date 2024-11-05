@@ -82,7 +82,7 @@ button{
     content: '';
     position: absolute;
     bottom: -5px;
-    background-color: rgb(192, 15, 15);
+    background-color: red;
     width: 100px;
     height: 2px;
     border-radius: 5px;

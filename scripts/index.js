@@ -3,6 +3,9 @@ document.addEventListener("DOMContentLoaded", function(){
     const clubLogo = document.querySelector('.team-circle-logo');
     const image = document.querySelector('.squad-layout-pic');
     const imageOverlay = document.querySelector('.before-squad-load');
+    const squadLayOutCloseButton = document.querySelector('.close-squad-layout');
+    const squadLayoutDiv = document.querySelector('.squad-layout-div');
+    const openSquadLayoutButton = document.querySelector('.open-squad-layout')
 
 
     // Preload the background image for circular logo
@@ -36,5 +39,14 @@ document.addEventListener("DOMContentLoaded", function(){
       };
   }
 
+  squadLayOutCloseButton.addEventListener('click', function(){
+    squadLayoutDiv.style.display = 'none'
+  })
+  openSquadLayoutButton.addEventListener('click', function(){
+    squadLayoutDiv.style.display = 'flex'
+  })
+  window.addEventListener('scroll', function(){
+    squadLayoutDiv.style.display = 'none'
+  })
     console.log("scripts are working");
 });

@@ -402,17 +402,23 @@
             </div>
         </div>
 
-        <div class="section1">
+        <div class="section1 squad-layout-div">
             <div class="before-squad-load"><p>Squad is Coming From The Dressing Room</p> </div>
+            <div class="close-squad-layout">X</div>
             <img src="./images/squad-layout.png" alt="Madina squad layout" class="squad-layout-pic">
         </div>
     </div>
 
-    <div class="element-wrapper">
-        <button class="transparent-button">View Squad Layout</button>
+    <div class="element-wrapper open-squad-layout-button-wrapper">
+        <button class="transparent-button open-squad-layout">View Squad Layout</button>
+        <button class="transparent-button">View Players' Profiles</button> 
+        <button class="transparent-button">Madina FC Academy</button> 
     </div>
 </section>
 
+<section class="club-news-wrapper">
+
+</section>
 
 <script src="./scripts/index.js"></script>    
 </body>
