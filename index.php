@@ -535,7 +535,28 @@
 </section>
 
 <section class="patners-and-sponsors-wrapper">
-    <p class="section-title">PATNERS AND SPONSORS WRAPPER</p>
+    <p class="section-title sponsors-section-title">PATNERS AND SPONSORS WRAPPER</p>
+    <p class="context">
+        Madina FC proudly partners with a diverse range of sponsors who share our passion for sports and
+        community development. Their support enables us to provide top-tier training, facilities, and opportunities
+        for our players while giving back to the community. Together, we are building a brighter future, both on and
+        off the field.
+        <span>
+            We extend our heartfelt gratitude to our sponsors for their
+            unwavering support. Your commitment allows us to continue
+            growing, inspiring, and making a positive impact in our community.
+        </span>
+    </p>
+    <div class="patners-logos-wrapper">
+        <div class="ggr-logo-wrapper"> 
+            <div class="logo-div ggr-logo"></div>
+                <p>Green Globe Realisation</p>
+            </div>
+        <div class="kws-logo-wrapper">
+            <img src="./images/kws-logo.png" alt="" class="kws-logo-image">
+            <p>Kenya Wildlife Service</p>
+        </div>
+    </div>
 </section>
 
 <script src="./scripts/index.js"></script>    
