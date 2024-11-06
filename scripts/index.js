@@ -52,8 +52,9 @@ document.addEventListener("DOMContentLoaded", function(){
  //swipper ini
  const swiper = new Swiper('.swiper', {
     // Optional parameters
-    direction: 'vertical',
+    direction: 'horizontal',
     loop: true,
+    
   
     // If we need pagination
     pagination: {
@@ -64,6 +65,10 @@ document.addEventListener("DOMContentLoaded", function(){
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+    },
+    autoplay:{
+      delay: 3000,
+      disableOnInteraction: false,
     },
   
     // And if we need scrollbar

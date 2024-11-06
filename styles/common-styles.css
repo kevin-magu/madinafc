@@ -110,3 +110,10 @@ button{
   pointer-events: none; /* Allows clicks through the overlay */
   z-index: 1; /* Places the overlay on top */
 }
+
+.swiper-button-prev, .swiper-button-next{
+    color: white;
+}
+.swiper-pagination{
+    color: white;
+}

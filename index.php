@@ -491,10 +491,9 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                ...
+                <div class="swiper-slide comm-impact1"></div>
+                <div class="swiper-slide comm-impact2"></div>
+                <div class="swiper-slide comm-impact3"></div>
             </div>
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
@@ -503,17 +502,15 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
 
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-            </div>`
+            </div>
         </div>
         <div class="section2">
-            <p>At Madina FC, our commitment goes beyond football—we
+            <p>At Madina FC, our commitment goes beyond football .We
                 believe in giving back to the community that supports us.
                 Through initiatives like our tree-planting program, we aim to
                 promote environmental sustainability while fostering a
                 sense of responsibility among our players and supporters.
-                By planting trees, we’re not only helping to create greener
+                By planting trees, we're not only helping to create greener
                 spaces but also building a legacy of care and stewardship
                 for future generations.
                 We are proud to partner with local organizations and
@@ -522,6 +519,23 @@
             </p>
         </div>
     </div>
+    <div class="element-wrapper community-impact-button-wrapper">
+        <button class="transparent-button">View More Community projects</button> 
+        <button class="transparent-button">Support Us</button> 
+    </div>
+</section>
+
+<section class="homepage-gallery-section-wrapper">
+    <p class="section-title">TEAM GALLERY</p>
+    <div class="gallery-cards-wrapper">
+        <div class="card homepage-pic1"></div>
+        <div class="card homepage-pic2"></div>
+        <div class="card homepage-pic3"></div>
+    </div>
+</section>
+
+<section class="patners-and-sponsors-wrapper">
+    <p class="section-title">PATNERS AND SPONSORS WRAPPER</p>
 </section>
 
 <script src="./scripts/index.js"></script>    

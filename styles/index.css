@@ -526,12 +526,101 @@ body {
 .club-news-wrapper button{
   margin-top: 40px;
 }
+
+
+/* community impact section */
 .community-impact-wrapper{
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeed;
 }
 
-.swiper{
-  height: 600px;
-  width: 500px;
+.swiper-and-context-wrapper{
+  display: flex;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90%;
 }
+
+.swiper-and-context-wrapper .swiper{
+  height: 450px;
+  width: 700px;
+  border-radius: 3px;
+}
+.comm-impact1{
+  background: url(../images/com-impact-1.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.comm-impact2{
+  background: url(../images/com-impact-2.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.comm-impact3{
+  background: url(../images/com-impact-3.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.swiper-and-context-wrapper .section2{
+  text-align: center;
+  margin-left: 30px;
+  font-size: 20px;
+}
+.community-impact-button-wrapper{
+  gap: 20px;
+  margin-top: 40px;
+}
+
+/* gallery section */
+
+.homepage-gallery-section-wrapper{
+  background-color: #eeeeed;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-cards-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+.gallery-cards-wrapper .card{
+  width: 300px;
+  height: 400px;
+  background-color: #1c1c1c;
+  border-radius: 3px;
+}
+
+.gallery-cards-wrapper .homepage-pic1{
+  background: url(../images/gallery-pic1.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gallery-cards-wrapper .homepage-pic2{
+  background: url(../images/gallery-pic2.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gallery-cards-wrapper .homepage-pic3{
+  background: url(../images/gallery-pic3.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* patners and sponsors wrapper */
+
+
+
 
