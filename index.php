@@ -5,11 +5,12 @@
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/e4c074505f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/common-styles.css">
+    <link rel="stylesheet" href="./styles/footer.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
@@ -562,14 +563,12 @@
         </div>
     </div>
 
-    <div class="element-wrapper community-impact-button-wrapper">
+    <div class="element-wrapper community-impact-button-wrapper" style="margin-bottom: 40px;">
         <button class="transparent-button">Become a sponsor / patner</button> 
     </div>
 </section>
 
-<footer>
-    
-</footer>
+<?php include './includes/footer.html' ?>
 <script src="./scripts/index.js"></script>    
 </body>
 </html>

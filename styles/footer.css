@@ -1,0 +1,116 @@
+footer{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #1c1c1c;
+    color: white;
+}
+
+.footer-subtitle{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+footer .footer-line1{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    font-size: 40px;
+    font-style: italic;
+}
+footer .footer-line1 p{
+    opacity: 60%;
+    color: white;
+    font-weight: bold;
+}
+footer .footer-line1 .madina-logo{
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    border-radius: 50%;
+    background: url(../images/madina-logo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer .footer-line2{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    color: white;
+}
+.footer-line2 a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-line2 a:hover{
+    text-decoration: underline;
+}
+footer .contactus-wrapper i{
+    margin-right: 15px;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+footer ul li{
+    list-style: none;
+}
+footer .social-links-wrapper{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+}
+.fa-facebook{
+    color: blue;
+}
+.fa-instagram{
+    color: #E1306C;
+}
+.fa-youtube{
+    color: 	#FF0000;
+}
+footer .social-links-wrapper i{
+    font-size: 25px;
+}
+.social-links-wrapper .social-icons-wrapper{
+    gap: 20px;
+    display: flex;
+}
+.message-form-wrapper {
+    display: none;
+}
+
+footer form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+footer form input{
+    height: 30px;
+}
+footer form input, textarea{
+    border: none;
+    display: flex;
+    text-align: left;
+    padding: 10px;
+    justify-content: center;
+}
+footer form input:focus,textarea:focus{
+    outline: none;
+}
+footer form textarea{
+    width: 360px;
+    height: 140px;
+}
+
+footer .footer-line3{
+    margin-top: 40px;
+}
