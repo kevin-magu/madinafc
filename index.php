@@ -532,10 +532,14 @@
         <div class="card homepage-pic2"></div>
         <div class="card homepage-pic3"></div>
     </div>
+
+    <div class="element-wrapper community-impact-button-wrapper">
+        <button class="transparent-button">View Full Gallery</button> 
+    </div>
 </section>
 
 <section class="patners-and-sponsors-wrapper">
-    <p class="section-title sponsors-section-title">PATNERS AND SPONSORS WRAPPER</p>
+    <p class="section-title sponsors-section-title">PATNERS AND SPONSORS</p>
     <p class="context">
         Madina FC proudly partners with a diverse range of sponsors who share our passion for sports and
         community development. Their support enables us to provide top-tier training, facilities, and opportunities
@@ -557,8 +561,15 @@
             <p>Kenya Wildlife Service</p>
         </div>
     </div>
+
+    <div class="element-wrapper community-impact-button-wrapper">
+        <button class="transparent-button">Become a sponsor / patner</button> 
+    </div>
 </section>
 
+<footer>
+    
+</footer>
 <script src="./scripts/index.js"></script>    
 </body>
 </html>
