@@ -20,6 +20,10 @@ body {
     scrollbar-color: #888 #f1f1f1;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 button{
     width: fit-content;
     padding: 10px;

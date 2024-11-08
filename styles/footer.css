@@ -5,6 +5,7 @@ footer{
     gap: 20px;
     background-color: #1c1c1c;
     color: white;
+    position: relative;
 }
 
 .footer-subtitle{
@@ -21,11 +22,12 @@ footer .footer-line1{
     font-style: italic;
 }
 footer .footer-line1 p{
-    opacity: 60%;
+    opacity: 20%;
     color: white;
     font-weight: bold;
 }
 footer .footer-line1 .madina-logo{
+    opacity: 50%;
     width: 60px;
     height: 60px;
     margin-right: 20px;
@@ -68,6 +70,9 @@ footer .social-links-wrapper{
     flex-direction: column;
     gap: 15px;
 }
+.fa-whatsapp{
+    color: #25D366;
+}
 .fa-facebook{
     color: blue;
 }
@@ -83,6 +88,12 @@ footer .social-links-wrapper i{
 .social-links-wrapper .social-icons-wrapper{
     gap: 20px;
     display: flex;
+}
+.social-links-wrapper .social-icons-wrapper a{
+    transition: 0.4s ease-in-out linear;
+}
+.social-links-wrapper .social-icons-wrapper a:hover{
+    transform: translateY(-1px);
 }
 .message-form-wrapper {
     display: none;
@@ -114,3 +125,33 @@ footer form textarea{
 footer .footer-line3{
     margin-top: 40px;
 }
+footer .footer-line3 a{
+    color: red;
+    text-decoration: none;
+}
+
+.leave-a-message-button{
+    height: 40px;
+    background-color: #eeeeed;
+    color: #1c1c1c;
+}
+.leave-a-message-button:hover{
+    background-color: #cacaca;
+}
+
+
+.move-to-top-button{
+    position: absolute;
+    text-decoration: none;
+    right: 10px;
+    top: -40px;
+    background-color: #1c1c1c;
+    color: #eeeeed;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+

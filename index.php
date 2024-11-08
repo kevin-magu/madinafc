@@ -5,6 +5,7 @@
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link rel="icon" href="./images/madina-logo.png" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/e4c074505f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/index.css">
@@ -16,7 +17,7 @@
     <title>Home</title>
 </head>
 <body>
-<section class="homepage-wrapper">
+<section class="homepage-wrapper" id="homepage">
     <?php include 'includes/navbar.html' ?>
         <div class="section-overlay"></div>
         <div class="club-name-wrapper">
@@ -381,17 +382,17 @@
                     </tr>
                     <tr>
                         <td>Aguero </td>
-                        <td>Center Forwards</td>
+                        <td>Center Forward</td>
                         <td>9</td>
                     </tr>
                     <tr>
                         <td>Muktar Osmihen/td>
-                        <td>Center Forwards</td>
+                        <td>Center Forward</td>
                         <td>9</td>
                     </tr>
                     <tr>
                         <td>Abukar Bare</td>
-                        <td>Center Forwards</td>
+                        <td>Center Forward</td>
                         <td>9</td>
                     </tr>
                     <tr>
