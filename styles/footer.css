@@ -1,11 +1,17 @@
+body{
+    position: relative;
+}
+
 footer{
+    width: 100%;
     padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     background-color: #1c1c1c;
     color: white;
-    position: relative;
+    position: absolute;
+    bottom: 0;
 }
 
 .footer-subtitle{

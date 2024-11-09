@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eeeeed;
+    position: relative;
+}
+nav{
+    width: 100%;
+    background: #1c1c1c;
+}
+
+.aboutus-page-wrapper{
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
