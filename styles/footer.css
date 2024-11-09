@@ -10,8 +10,6 @@ footer{
     gap: 20px;
     background-color: #1c1c1c;
     color: white;
-    position: absolute;
-    bottom: 0;
 }
 
 .footer-subtitle{

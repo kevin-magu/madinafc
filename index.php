@@ -17,10 +17,9 @@
     <title>Home</title>
 </head>
 <body>
+<?php include 'includes/navbar.html' ?>
 <section class="homepage-wrapper" id="homepage">
-    <?php include 'includes/navbar.html' ?>
-        <div class="section-overlay"></div>
-        <div class="club-name-wrapper">
+            <div class="club-name-wrapper">
                 <p class="club-name">
                     MADINA <span> FC</span>     
                 </p>
