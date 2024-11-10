@@ -13,7 +13,7 @@ nav{
 }
 
 .aboutus-page-wrapper{
-   height: 100vh;
+   min-height: 100vh;
    position: relative;
    display: flex;
    flex-direction: column;
@@ -38,7 +38,7 @@ nav{
 .about-us-content p{
     color: #eeeeed;
     width: 70%;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .aboutus-page-wrapper .section-overlay{

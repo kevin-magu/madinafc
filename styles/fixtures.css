@@ -1,0 +1,18 @@
+.fixtures-body-wrapper{
+    min-height: 100vh;
+}
+.fitures-highlights{
+    display: flex;
+}
+.fitures-highlights .section1,.section2{
+    height: 400px;
+    width: 50%;
+    background: #1c1c1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fitures-highlights .section1{
+    border-right: 1px solid white;
+}
