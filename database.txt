@@ -10,3 +10,5 @@ team result
 - gameType
 - time
 - location
+
+start with upcoming matches  then past matches on the fixtures and results page.
