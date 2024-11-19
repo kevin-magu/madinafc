@@ -21,7 +21,8 @@ code {
 .nav-wrapper{
   display: flex;
   justify-content: center;
-  background: #1c1c1c;
+  background: #eeeeed;
+  color: #1c1c1c;
 }
 
 nav{
@@ -30,6 +31,7 @@ nav{
     justify-content: center;
     align-items: center;
     height: 70px;
+    color: #1c1c1c;
 }
 nav .club-logo-wrapper{
     height: 50px;
@@ -41,14 +43,16 @@ nav .club-logo-wrapper{
     background-repeat: no-repeat;
     margin-right: 40px;
 }
+
 nav a{
     text-decoration: none;
-    color: white;
+    color: #1c1c1c;
     width: fit-content;
     margin-right: 40px;
     font-size: 15px;
     font-weight: bold;
 }
+
 nav a:hover{
   opacity: 70%;
 }

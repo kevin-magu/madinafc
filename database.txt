@@ -1,0 +1,12 @@
+team fixtures 
+- opponent 
+- gameType
+- time 
+- location
+
+team result
+
+- opponent
+- gameType
+- time
+- location

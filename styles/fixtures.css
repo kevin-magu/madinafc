@@ -1,3 +1,6 @@
+body{
+    background-color: #eeeeed;
+}
 .fixtures-body-wrapper{
     min-height: 100vh;
 }
@@ -9,10 +12,39 @@
     width: 50%;
     background: #1c1c1c;
     display: flex;
+    flex-direction: column;
+    gap: 20px;
     justify-content: center;
     align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.upcoming-match-title{
+    font-size: 30px;
+    opacity: 60%;
+}
+
+.fitures-highlights .teams{
+    display: flex;
+    gap: 30px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.location-and-time{
+    gap: 10px;
+    display: flex;
 }
 
 .fitures-highlights .section1{
     border-right: 1px solid white;
+}
+.fitures-highlights .section1 .goal-number,.section2 .goal-number{
+    background-color: white;
+    width: 50px;
+    display: flex;
+    padding: 3px;
+    justify-content: center;
+    color: #1c1c1c;
+    font-weight: bold;
 }
