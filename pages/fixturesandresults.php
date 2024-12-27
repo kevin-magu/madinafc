@@ -38,7 +38,11 @@ $query_exe = mysqli_query($connection, $query);
 
         <section class="fixtures-and-results">
             <div class="upcoming-matches">
-                <p></p>
+                <table>
+                    <thead>
+                        <tr></tr>
+                    </thead>
+                </table>
             </div>
             <div class="recent-results">
 

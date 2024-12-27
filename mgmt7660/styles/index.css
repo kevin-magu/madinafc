@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+}
+nav{
+    display: flex;
+    color: #007bff;
+    font-weight: bold;
+    height: 70px;
+    align-items: center;
+}
+nav p{
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 10px;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.menu .line{
+    height: 2px;
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+.menu .line1{
+    width: 30px;
+}
+.menu .line2{
+    width: 26px;
+}
+.menu .line3{
+    width: 22px;
+}
+
+.first-line{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.rectangle{
+    background-color: #007bff;
+    color: white;
+    height: 200px;
+    width: 400px;
+    border-radius: 5px;
+}
