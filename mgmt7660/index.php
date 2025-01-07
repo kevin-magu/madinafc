@@ -14,9 +14,9 @@
 <?php include './adminincludes/navbar.php' ?> 
 <div class="main-container">
     <div class="first-line">
-        <div class="rectangle"></div>
-        <div class="rectangle"></div>
-        <div class="rectangle"></div>
+        <div class="rectangle"> <div class="circle"></div> <p>PLAYERS</p></div>
+        <div class="rectangle"> <div class="circle"></div> <p>PLAYERS</p> </div>
+        <div class="rectangle"> <div class="circle"></div> NEWS & CLUB UPDATES </div>
     </div>
 
 
