@@ -45,11 +45,21 @@ nav p{
     width: 22px;
 }
 
+.greetings{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
 .first-line{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
+.first-line a{
+    text-decoration: none;
+}
+
 .rectangle{
     background-color: #007bff;
     color: white;
@@ -62,7 +72,11 @@ nav p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: 0.2s linear;
 }
+.rectangle:hover{
+    transform: translateY(-5px);
+} 
 
 .circle{
     width: 100px;
@@ -73,4 +87,24 @@ nav p{
     position: absolute;
     bottom: -40px;
     right: -40px;
+}
+
+.second-line{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    font-size: 25px;
+    gap: 10px;
+}
+.second-line p:nth-child(1){
+    font-weight: bold;
+    font-style: italic;
+}
+.second-line p:nth-child(2){
+    filter: opacity(50%);
+}
+.second-line a{
+    font-size: 14px;
 }

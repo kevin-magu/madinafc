@@ -13,13 +13,17 @@
 <body>
 <?php include './adminincludes/navbar.php' ?> 
 <div class="main-container">
+    <p class="greetings">Hello Hassan, It's time to manage your team !</p>
     <div class="first-line">
-        <div class="rectangle"> <div class="circle"></div> <p>PLAYERS</p></div>
-        <div class="rectangle"> <div class="circle"></div> <p>PLAYERS</p> </div>
-        <div class="rectangle"> <div class="circle"></div> NEWS & CLUB UPDATES </div>
+        <a href=""><div class="rectangle"> <div class="circle"></div> <p>PLAYERS</p></div></a>
+        <a href=""><div class="rectangle"> <div class="circle"></div> <p>STATS & SCORESHEET </p> </div></a>
+        <a href=""><div class="rectangle"> <div class="circle"></div> NEWS & CLUB UPDATES </div></a>
     </div>
-
-
+    <div class="second-line">
+        <p>MADINA FC</p>
+        <p>UNITY, PASSION, VICTORY</p>
+        <a href="">Visit main website</a>
+    </div>    
 </div>
 </body>
 </html>
