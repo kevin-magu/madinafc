@@ -14,6 +14,5 @@
 <body>
 <?php include './adminincludes/navbar.php' ?> 
 
-<p>players</p>
 </body>
 </html>

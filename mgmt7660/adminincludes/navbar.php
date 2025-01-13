@@ -15,4 +15,4 @@
         </ul>
     </div>
 </nav>
-<script src="../scripts.js"></script>
+<script src="scripts.js"></script>
