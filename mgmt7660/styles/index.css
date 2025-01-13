@@ -65,7 +65,7 @@ nav p a:visited{
     border-radius: 5px;
     z-index: 100;
     width: 200px;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -86,7 +86,11 @@ nav p a:visited{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
+}
+
+.menu-hidden{
+    display: none;
 }
 
 .side-menu li{
