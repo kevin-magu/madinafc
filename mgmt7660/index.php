@@ -16,7 +16,7 @@
 <div class="main-container">
     <p class="greetings">Hello Hassan, It's time to manage your team !</p>
     <div class="first-line">
-        <a href=""><div class="rectangle"> <div class="circle"></div> <p>PLAYERS</p></div></a>
+        <a href="mgmtplayers.php"><div class="rectangle"> <div class="circle"></div> <p>PLAYERS</p></div></a>
         <a href=""><div class="rectangle"> <div class="circle"></div> <p>STATS & SCORESHEET </p> </div></a>
         <a href=""><div class="rectangle"> <div class="circle"></div> NEWS & CLUB UPDATES </div></a>
     </div>
