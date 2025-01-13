@@ -15,11 +15,16 @@ nav{
 }
 nav a{
     font-size: 20px;
-    width: 100%;
+    width: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
+}
+nav a p{
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
 .menu{
