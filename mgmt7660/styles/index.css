@@ -13,18 +13,20 @@ nav{
     align-items: center;
     position: relative;
 }
-nav a{
+nav p{
+    
     font-size: 20px;
-    width: fit-content;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+nav p a{
     text-decoration: none;
 }
-nav a p{
-    display: flex;
-    width: 100%;
-    justify-content: center;
+nav p a:visited{
+    color: inherit;
 }
 
 .menu{

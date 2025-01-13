@@ -4,7 +4,7 @@
         <div class="line line2"></div>
         <div class="line line3"></div>
     </div>
-    <a href="/madinafc/mgmt7660/"><p>MADINA FC ADMIN DASHBOARD</p></a>
+    <p><a href="/madinafc/mgmt7660/">MADINA FC ADMIN DASHBOARD</a></p>
 
     <div class="side-menu">
         <ul>
