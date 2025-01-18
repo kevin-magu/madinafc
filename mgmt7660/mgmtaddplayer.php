@@ -18,9 +18,10 @@
     <form action="addplayerprocessing.php" method="POST">
         <input type="text" name='playerName' placeholder="Player Name">
         <input type="text" name='nationalID' placeholder="National ID number">
-        <input type="text" name='dob' placeholder="Date of birth">
+        <input type="text" name='fieldNumber' placeholder="Field Number">
         <input type="text" name='position' placeholder="Position">
-        <input type="text" name='joinDate' placeholder="Date of joining ">
+        <label for=""> In the club since:</label>
+        <input type="date" name='joinDate' placeholder="In the club since">
         <input type="text" name='clubStatus' placeholder="status">
         <button type="submit">Submit</button>
     </form>
