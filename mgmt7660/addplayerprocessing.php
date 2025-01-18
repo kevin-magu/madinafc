@@ -1,5 +1,6 @@
 <?php 
 ini_set('display_errors', 1);
+session_start();
 include '../includes/connection.php';
 if($_SERVER['REQUEST_METHOD']=== 'POST'){
 
@@ -17,14 +18,17 @@ if($_SERVER['REQUEST_METHOD']=== 'POST'){
 
     //execute the query
     if($stmt -> execute()){
-        echo "Player added successfully !";
+        $_SESSION['player_added_success'] = "Player added successfully !";
+        header('Location: /madinafc/mgmt7660/mgmtaddplayer.php');
     }else{
-        echo "Error: " .$stmt -> error;
+        $_SESSION['player_added_success'] = "Error adding player. Please try again";
+        header('Location: /madinafc/mgmt7660/mgmtaddplayer.php');
     }
 
     $stmt -> close();
     $connection -> close();
-    
+
+
 }
 
 ?>

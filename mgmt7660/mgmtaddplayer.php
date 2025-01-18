@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,6 +42,11 @@
         <input type="number" name='joinDate' placeholder="Year of joining">
 
         <button type="submit">Submit</button>
+        <?php if(isset($_SESSION['player_added_success'])){
+            echo "<p>" . $_SESSION['player_added_success'] . "</p>";
+            unset($_SESSION['player_added_success']);
+        } ?>
+        
     </form>
     </div>    
 </body>
