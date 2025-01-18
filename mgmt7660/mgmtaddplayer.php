@@ -45,8 +45,11 @@
         <?php if(isset($_SESSION['player_added_success'])){
             echo "<p>" . $_SESSION['player_added_success'] . "</p>";
             unset($_SESSION['player_added_success']);
-        } ?>
-        
+        }else if(isset($_SESSION['player_added_error']))
+            echo "<p>" . $_SESSION['player_added_error'] . "</p>";
+            unset($_SESSION['player_added_error']);
+        ?>
+
     </form>
     </div>    
 </body>
