@@ -14,5 +14,11 @@
 <body>
 <?php include './adminincludes/navbar.php' ?> 
 
+<section class="body-content-cover">
+    <div class="search-bar">
+        <input type="text" placeholder="search player">
+        <button>Search</button>
+    </div>
+</section>
 </body>
 </html>
