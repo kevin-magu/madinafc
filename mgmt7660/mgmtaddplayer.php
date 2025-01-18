@@ -18,11 +18,28 @@
     <form action="addplayerprocessing.php" method="POST">
         <input type="text" name='playerName' placeholder="Player Name">
         <input type="text" name='nationalID' placeholder="National ID number">
-        <input type="text" name='fieldNumber' placeholder="Field Number">
-        <input type="text" name='position' placeholder="Position">
-        <label for=""> In the club since:</label>
-        <input type="date" name='joinDate' placeholder="In the club since">
-        <input type="text" name='clubStatus' placeholder="status">
+        <input type="number" name='fieldNumber' placeholder="Field Number">
+        <select type="text" name='position' placeholder="Position">
+            <option value="">Goalkeeper (GK)</option>
+            <option value="">Center-Back (CB)</option>
+            <option value="">Right-Back (RB)</option>
+            <option value="">Left-Back (LB)</option>
+            <option value="">Right Wing-Back (RWB)</option>
+            <option value="">Left Wing-Back (LWB)</option>
+            <option value="">Sweeper (SW)</option>
+            <option value="">Defensive Midfielder (DM)</option>
+            <option value="">Central Midfielder (CM)</option>
+            <option value="">Attacking Midfielder (AM)</option>
+            <option value="">Right Midfielder (RM)</option>
+            <option value="">Left Midfielder (LM)</option>
+            <option value="">Striker (ST)</option>
+            <option value="">Center-Forward (CF)</option>
+            <option value="">Second Striker (SS)</option>
+            <option value="">Right Winger (RW)</option>
+            <option value="">Left Winger (LW)</option>>
+        </select>    
+        <input type="number" name='joinDate' placeholder="Year of joining">
+
         <button type="submit">Submit</button>
     </form>
     </div>    

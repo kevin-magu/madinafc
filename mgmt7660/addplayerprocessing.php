@@ -6,19 +6,25 @@ if($_SERVER['REQUEST_METHOD']=== 'POST'){
     //take data from html form
     $playerName = $_POST['playerName'];
     $nationalID = $_POST['nationalID'];
-   // $dob = $_POST['dob'];
+    $fieldNumber = $_POST['fieldNumber'];
     $position = $_POST['position'];
-   // $joinDate = $_POST['joinDate'];
-    $clubStatus = $_POST['clubStatus'];
+    $joinDate = $_POST['joinDate'];
 
-    $query = "INSERT INTO player(playerName, nationalID, position, clubStatus) VALUES ('$playerName', '$nationalID', '$position','$clubStatus') ";
-    $exe = mysqli_query($connection, $query);
+    //prepare the sql query
+    $query = "INSERT INTO player(playerName, nationalID, fieldNumber,position, joinDate) VALUES (?,?,?,?,?)"; 
+    $stmt = $connection ->prepare($query);
+    $stmt -> bind_param("sssss", $playerName, $nationalID, $fieldNumber, $position, $joinDate);
 
-    if($exe){
-        echo "Player added successfully";
+    //execute the query
+    if($stmt -> execute()){
+        echo "Player added successfully !";
     }else{
-        echo "adding player failed. PLease try again or contact support team";
+        echo "Error: " .$stmt -> error;
     }
+
+    $stmt -> close();
+    $connection -> close();
+    
 }
 
 ?>
