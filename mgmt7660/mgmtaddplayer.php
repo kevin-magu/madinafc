@@ -14,9 +14,20 @@
 </head>
 <body>
 <?php include './adminincludes/navbar.php' ?> 
-<p class="greetings">It's time to add new players to the team</p>
+<p class="greetings">It's time to add new players to the team !</p>
 <div class="form-continer">
     <form action="addplayerprocessing.php" method="POST">
+        <?php if(isset($_SESSION['player_added_success'])){
+            echo "<p class='success-message'>" . $_SESSION['player_added_success'] . "</p>";
+            unset($_SESSION['player_added_success']);
+            }else if(isset($_SESSION['player_added_error'])){
+                echo "<p class='error-message'>" . $_SESSION['player_added_error'] . "</p>";
+                unset($_SESSION['player_added_error']);
+            }else if($_SESSION['player_exists']){
+                echo "<p class='error-message'>" . $_SESSION['player_exists'] . "</p>";
+                unset($_SESSION['player_exists']);
+            }
+        ?>
         <input type="text" name='playerName' placeholder="Player Name">
         <input type="text" name='nationalID' placeholder="National ID number">
         <input type="number" name='fieldNumber' placeholder="Field Number">
@@ -42,13 +53,6 @@
         <input type="number" name='joinDate' placeholder="Year of joining">
 
         <button type="submit">Submit</button>
-        <?php if(isset($_SESSION['player_added_success'])){
-            echo "<p>" . $_SESSION['player_added_success'] . "</p>";
-            unset($_SESSION['player_added_success']);
-        }else if(isset($_SESSION['player_added_error']))
-            echo "<p>" . $_SESSION['player_added_error'] . "</p>";
-            unset($_SESSION['player_added_error']);
-        ?>
 
     </form>
     </div>    

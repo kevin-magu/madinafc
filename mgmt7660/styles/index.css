@@ -225,3 +225,16 @@ form select{
 form input:focus , select:focus{
     outline: none;
 }
+
+.success-message{
+    color: green;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.error-message{
+    color: red;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+}

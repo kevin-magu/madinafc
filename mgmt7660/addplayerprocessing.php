@@ -11,10 +11,25 @@ if($_SERVER['REQUEST_METHOD']=== 'POST'){
     $position = $_POST['position'];
     $joinDate = $_POST['joinDate'];
 
+
+    //check if user exists
+    $checkQuery = "SELECT nationalID FROM player WHERE nationalID = $nationalID";
+    $result = $connection->query($checkQuery);
+
+    if($result ->num_rows > 0){ 
+        $_SESSION['player_exists'] = "Player already exists in the Database.";
+        header('Location: /madinafc/mgmt7660/mgmtaddplayer.php');
+    }else{
     //prepare the sql query
+    try{
     $query = "INSERT INTO player(playerName, nationalID, fieldNumber,position, joinDate) VALUES (?,?,?,?,?)"; 
     $stmt = $connection ->prepare($query);
-    $stmt -> bind_param("sssss", $playerName, $nationalID, $fieldNumber, $positio, $joinDate);
+    $stmt -> bind_param("sssss", $playerName, $nationalID, $fieldNumber, $position, $joinDate);
+
+    if(!$stmt){
+        $_SESSION['player_added_error'] = "Error adding player. Please try again";
+        header('Location: /madinafc/mgmt7660/mgmtaddplayer.php');
+    }
 
     //execute the query
     if($stmt -> execute()){
@@ -28,6 +43,15 @@ if($_SERVER['REQUEST_METHOD']=== 'POST'){
     $stmt -> close();
     $connection -> close();
 
+    }catch(Exception $e){
+        $_SESSION['player_added_error'] = "Error adding player. Please try again.";
+        header('Location: /madinafc/mgmt7660/mgmtaddplayer.php');
+    }
+
+    
+    } 
+     
+    
 
 }
 
