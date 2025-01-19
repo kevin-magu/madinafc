@@ -13,7 +13,7 @@
     <title>Add Player</title>
 </head>
 <body>
-    
+
 <?php include './adminincludes/navbar.php' ?> 
 <p class="greetings">It's time to add new players to the team !</p>
 <div class="form-continer">
@@ -33,23 +33,23 @@
         <input type="text" name='nationalID' placeholder="National ID number">
         <input type="number" name='fieldNumber' placeholder="Field Number">
         <select type="text" name='position' placeholder="Position">
-            <option value="">Goalkeeper (GK)</option>
-            <option value="">Center-Back (CB)</option>
-            <option value="">Right-Back (RB)</option>
-            <option value="">Left-Back (LB)</option>
-            <option value="">Right Wing-Back (RWB)</option>
-            <option value="">Left Wing-Back (LWB)</option>
-            <option value="">Sweeper (SW)</option>
-            <option value="">Defensive Midfielder (DM)</option>
-            <option value="">Central Midfielder (CM)</option>
-            <option value="">Attacking Midfielder (AM)</option>
-            <option value="">Right Midfielder (RM)</option>
-            <option value="">Left Midfielder (LM)</option>
-            <option value="">Striker (ST)</option>
-            <option value="">Center-Forward (CF)</option>
-            <option value="">Second Striker (SS)</option>
-            <option value="">Right Winger (RW)</option>
-            <option value="">Left Winger (LW)</option>>
+            <option value="Goalkeeper (GK)">Goalkeeper (GK)</option>
+            <option value="Center-Back (CB)">Center-Back (CB)</option>
+            <option value="Right-Back (RB)">Right-Back (RB)</option>
+            <option value="Left-Back (LB)">Left-Back (LB)</option>
+            <option value="Right Wing-Back (RWB)">Right Wing-Back (RWB)</option>
+            <option value="Left Wing-Back (LWB)">Left Wing-Back (LWB)</option>
+            <option value="Sweeper (SW)">Sweeper (SW)</option>
+            <option value="Defensive Midfielder (DM)">Defensive Midfielder (DM)</option>
+            <option value="Central Midfielder (CM)">Central Midfielder (CM)</option>
+            <option value="Attacking Midfielder (AM)">Attacking Midfielder (AM)</option>
+            <option value="Right Midfielder (RM)">Right Midfielder (RM)</option>
+            <option value="Left Midfielder (LM)">Left Midfielder (LM)</option>
+            <option value="Striker (ST)">Striker (ST)</option>
+            <option value="Center-Forward (CF)">Center-Forward (CF)</option>
+            <option value="Second Striker (SS)">Second Striker (SS)</option>
+            <option value="Right Winger (RW)">Right Winger (RW)</option>
+            <option value="Left Winger (LW)">Left Winger (LW)</option>>
         </select>    
         <input type="number" name='joinDate' placeholder="Year of joining">
 

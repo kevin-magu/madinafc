@@ -30,10 +30,12 @@
 
 <table>  
     <thead>
-        <tr>Name</tr>
-        <tr>Number</tr>
-        <tr>Position</tr>
-        <tr>In the club since</tr>
+        <tr>
+        <th>Name</th>
+        <th>Number</th>
+        <th>Position</th>
+        <th>In the club since</th>
+        </tr>
     </thead>
 <tbody>    
 <?php 
