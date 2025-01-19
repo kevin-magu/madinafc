@@ -111,6 +111,9 @@ nav p a:visited{
     justify-content: flex-start;
     align-items: flex-start;
 }
+.side-menu i{
+    margin-right: 10px;
+}
 
 .greetings{
     display: flex;
@@ -179,9 +182,21 @@ nav p a:visited{
 
 /* Player management page */
 
-.body-content-cover{
-
+.add-player-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.add-player-container a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #007bff;
+}
+.add-player-container a:visited{
+    color: inherit;
+}
+
 .search-bar{
     width: 100%;
     display: flex;
@@ -198,7 +213,19 @@ nav p a:visited{
 .search-bar button{
     margin-left: 30px;
 }
-
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f4f4f4;
+}
 /* add player page */
 .form-continer{
     width: 100%;

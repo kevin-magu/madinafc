@@ -13,6 +13,7 @@
     <title>Add Player</title>
 </head>
 <body>
+    
 <?php include './adminincludes/navbar.php' ?> 
 <p class="greetings">It's time to add new players to the team !</p>
 <div class="form-continer">

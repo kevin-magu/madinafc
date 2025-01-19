@@ -1,3 +1,10 @@
+<?php 
+    ini_set('display_errors', 1);
+    include '../includes/connection.php';
+    $sqlQuery = "SELECT playerName,fieldNumber,position,joinDate FROM player";
+    $result = $connection->query($sqlQuery);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,12 +20,40 @@
 </head>
 <body>
 <?php include './adminincludes/navbar.php' ?> 
+<p class="add-player-container"> <i class="fa-solid fa-plus"></i> <a href="/madinafc/mgmt7660/mgmtaddplayer.php">Add Player</a> </p>
 
 <section class="body-content-cover">
     <div class="search-bar">
         <input type="text" placeholder="search player">
         <button>Search</button>
     </div>
+
+<table>  
+    <thead>
+        <tr>Name</tr>
+        <tr>Number</tr>
+        <tr>Position</tr>
+        <tr>In the club since</tr>
+    </thead>
+<tbody>    
+<?php 
+    if($result->num_rows >0){
+        while($row = $result->fetch_assoc()){
+            echo "<tr>
+                    <td> " .$row['playerName'] . "</td>
+                    <td> " .$row['fieldNumber'] . "</td>
+                    <td> " .$row['position'] . "</td>
+                    <td> " .$row['joinDate'] . "</td>
+                 </tr>";
+        }
+    }else{
+        echo "<tr><td colspan='3'>No records found</td></tr>";
+    }
+?>
+</tbody>
+</table>  
+
 </section>
 </body>
 </html>
+<?php $connection->close() ?>
