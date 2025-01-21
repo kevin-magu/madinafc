@@ -17,7 +17,7 @@ if($_SERVER['REQUEST_METHOD']=== 'POST'){
     $result = $connection->query($checkQuery);
 
     if($result ->num_rows > 0){ 
-        $_SESSION['player_exists'] = "Player already exists in the Database.";
+        $_SESSION['player_exists'] = "ERROR! Player already exists in the Database.";
         header('Location: /madinafc/mgmt7660/mgmtaddplayer.php');
     }else{
     //prepare the sql query
@@ -50,9 +50,10 @@ if($_SERVER['REQUEST_METHOD']=== 'POST'){
 
     
     } 
+    //display
      
-    
-
 }
+
+
 
 ?>
