@@ -24,8 +24,10 @@
 
 <section class="body-content-cover">
     <div class="search-bar">
-        <input type="text" placeholder="search player">
-        <button>Search</button>
+       <form action="" method="POST">
+        <input type="text" name="searchValue" placeholder="search player">
+        <button type="submit">Search</button>  
+       </form> 
     </div>
 
 <table>  
@@ -54,6 +56,13 @@
 ?>
 </tbody>
 </table>  
+<?php 
+// display search results
+if($_SERVER['request_method']==POST){
+
+}
+
+?>
 
 </section>
 </body>
