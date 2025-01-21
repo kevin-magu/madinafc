@@ -58,7 +58,12 @@
 </table>  
 <?php 
 // display search results
-if($_SERVER['request_method']==POST){
+if($_SERVER['REQUEST_METHOD']==='POST'){
+    $searchValue = $_POST['searchValue']; 
+
+    // query db
+    $sqlQuery = "SELECT playerName,fieldNumber,position,joinDate FROM player";
+    $result = $connection->query($sqlQuery);
 
 }
 
