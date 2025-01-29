@@ -29,45 +29,22 @@
         <button type="submit">Search</button>  
        </form> 
     </div>
+<div class="playerbox-container">
+<?php
+if($result -> num_rows > 0){
+    while($row = $result->fetch_assoc()){
+        echo "
 
-<table>  
-    <thead>
-        <tr>
-        <th>Name</th>
-        <th>Number</th>
-        <th>Position</th>
-        <th>In the club since</th>
-        </tr>
-    </thead>
-<tbody>    
-<?php 
-    if($result->num_rows >0){
-        while($row = $result->fetch_assoc()){
-            echo "<tr>
-                    <td> " .$row['playerName'] . "</td>
-                    <td> " .$row['fieldNumber'] . "</td>
-                    <td> " .$row['position'] . "</td>
-                    <td> " .$row['joinDate'] . "</td>
-                 </tr>";
-        }
-    }else{
-        echo "<tr><td colspan='3'>No records found</td></tr>";
+            <div class='playerbox'>
+                ". $row['playerName']. ";
+            </div> 
+        ";
     }
-?>
-</tbody>
-</table>  
-<?php 
-// display search results
-if($_SERVER['REQUEST_METHOD']==='POST'){
-    $searchValue = $_POST['searchValue']; 
-
-    // query db
-    $sqlQuery = "SELECT playerName,fieldNumber,position,joinDate FROM player";
-    $result = $connection->query($sqlQuery);
-
 }
-
 ?>
+</div>
+
+
 
 </section>
 </body>

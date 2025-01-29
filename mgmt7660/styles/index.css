@@ -215,21 +215,22 @@ nav p a:visited{
 button{
     margin-left: 30px;
 }
-table {
-    width: 60%;
-    border-collapse: collapse;
-    margin: 20px auto;
+.playerbox{
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+    border-radius: 4px;
 }
-thead, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
+
+.playerbox-container{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    gap: 10px;
 }
-th {
-    background-color: #f4f4f4;
-    font-weight: 600;
-    padding: 4px;
-}
+
+
+
 /* add player page */
 .form-continer{
     width: 100%;
