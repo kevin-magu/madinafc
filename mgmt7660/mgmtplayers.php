@@ -36,7 +36,13 @@ if($result -> num_rows > 0){
         echo "
 
             <div class='playerbox'>
-                ". $row['playerName']. ";
+                <div class='player-pic'>
+                </div>
+                <div class='player-info'>
+                    <p class='player-info-name'>". $row['playerName']. "</p>
+                    <p class='player-info-position'>". $row['position']. "</p>
+                </div>
+                
             </div> 
         ";
     }

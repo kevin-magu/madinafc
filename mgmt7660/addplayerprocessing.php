@@ -10,6 +10,7 @@ if($_SERVER['REQUEST_METHOD']=== 'POST'){
     $fieldNumber = $_POST['fieldNumber'];
     $position = $_POST['position'];
     $joinDate = $_POST['joinDate'];
+    $playerImage = $_POST['playerImage'];
 
 
     //check if user exists
@@ -22,9 +23,31 @@ if($_SERVER['REQUEST_METHOD']=== 'POST'){
     }else{
     //prepare the sql query
     try{
-    $query = "INSERT INTO player(playerName, nationalID, fieldNumber,position, joinDate) VALUES (?,?,?,?,?)"; 
+
+    //process image insertion --start
+    $targetDir = "../uploads/images";    
+    $fileName = basename($_FILES['playerImage']['name']);
+    $targetFilePath = $targetDir . $fileName; // full path
+    //get file extension
+    $fileType = strtolower(pathinfo($targetFilePath, PATHINFO_EXTENSION));
+    //allowed file formats
+    $allowedTypes = array("jpg","jpeg","png","gif");
+    $checkFileType = in_array($fileType, $allowedTypes);
+    //move uploaded file to server directory
+    $moveFileToServerDir = move_uploaded_file($_FILES["playerImage"]['tmp_name'], $targetFilePath);
+    if(!$checkFileType){
+        $_SESSION['file_type_error'] = "Only images are allowed!";
+        header('Location: /madinafc/mgmt7660/mgmtaddplayer.php');
+        $connection -> close();
+    }else if(!$moveFileToServerDir){
+        $_SESSION['file_upload_error'] = "Error uloading image. Please try again or contact ADMIN";
+        header('Location: /madinafc/mgmt7660/mgmtaddplayer.php');
+        $connection -> close();
+    }
+
+    $query = "INSERT INTO player(playerName, nationalID, fieldNumber,position, joinDate,imageName,filePath) VALUES (?,?,?,?,?,?,?)"; 
     $stmt = $connection ->prepare($query);
-    $stmt -> bind_param("sssss", $playerName, $nationalID, $fieldNumber, $position, $joinDate);
+    $stmt -> bind_param("sssssss", $playerName, $nationalID, $fieldNumber, $position, $joinDate,$fileName,$targetFilePath);
 
     if(!$stmt){
         $_SESSION['player_added_error'] = "Error adding player. Please try again";

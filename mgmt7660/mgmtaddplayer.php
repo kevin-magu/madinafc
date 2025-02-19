@@ -27,12 +27,16 @@
             }else if($_SESSION['player_exists']){
                 echo "<p class='error-message'>" . $_SESSION['player_exists'] . "</p>";
                 unset($_SESSION['player_exists']);
+            }else if($_SESSION['file_upload_error']){
+                echo "<p class='error-message'> ".$_SESSION['file_upload_error']."</p>";
+            }else if($_SESSION['file_type_error']){
+                echo "<p class='error-message'>".$_SESSION['file_type_error']."</p>";
             }
         ?>
-        <input type="text" name='playerName' placeholder="Player Name">
-        <input type="text" name='nationalID' placeholder="National ID number">
-        <input type="number" name='fieldNumber' placeholder="Field Number">
-        <select type="text" name='position' placeholder="Position">
+        <input type="text" name='playerName' placeholder="Player Name" required>
+        <input type="number" name='nationalID' placeholder="National ID number" required>
+        <input type="number" name='fieldNumber' placeholder="Field Number" required>
+        <select type="text" name='position' placeholder="Position" required>
             <option value="Goalkeeper (GK)">Goalkeeper (GK)</option>
             <option value="Center-Back (CB)">Center-Back (CB)</option>
             <option value="Right-Back (RB)">Right-Back (RB)</option>
@@ -52,12 +56,31 @@
             <option value="Left Winger (LW)">Left Winger (LW)</option>>
         </select>    
         <input type="number" name='joinDate' placeholder="Year of joining">
-
-        <button type="submit">Submit</button>
-        
-
-        
+        <input type="file" placeholder="your profile photo" accept="image/*" onchange="previewImage(event)" name="playerImage" required>
+        <button type="submit">Submit</button>   
     </form>
-    </div>    
+
+    <div class="image-preview-container">
+        <img src="" alt="" id="imagePreview" alt="Image Preview">
+
+        <script>
+            function previewImage(event){
+                var file = event.target.files[0];//gets the selected file
+                var reader = new FileReader(); // creates a new file reader
+
+                reader.onload= function(){
+                  // When the file is read, set the preview image source
+                  var imagePreview = document.getElementById('imagePreview');
+                  imagePreview.src = reader.result;
+                  imagePreview.style.display='block';
+                };
+                if(file){
+                    reader.readAsDataURL(file); //convert the file to a data URL
+                }
+                console.log("the script run");
+            }
+        </script>
+    </div>
+</div>    
 </body>
 </html>

@@ -212,21 +212,33 @@ nav p a:visited{
     border-radius: 40px;
     text-align: center;
 }
-button{
-    margin-left: 30px;
-}
 .playerbox{
     width: 200px;
-    height: 200px;
-    background-color: grey;
-    border-radius: 4px;
+    height: 250px;
+    background-color: #e9edf1;
+    border-radius: 2px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .playerbox-container{
     display: flex;
     margin-top: 50px;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
+}
+.player-pic{
+    height: 50%;
+    background-color: white;
+}
+
+.player-info{
+    padding: 3px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.player-info-name{
+    font-size: 13px;
+    font-weight: bold;
 }
 
 
@@ -235,8 +247,9 @@ button{
 .form-continer{
     width: 100%;
     display: flex;
-    align-items: center;
+    
     justify-content: center;
+    gap: 50px;
 }
 
 form{
@@ -269,4 +282,10 @@ form input:focus , select:focus{
     font-size: 13px;
     text-transform: uppercase;
     font-weight: bold;
+}
+#imagePreview{
+    height: 200px;
+    width: 250px;
+    border-radius: 5px;
+    display: none;
 }
