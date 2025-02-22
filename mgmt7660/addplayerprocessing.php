@@ -12,7 +12,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     $fieldNumber = $_POST['fieldNumber'];
     $position = $_POST['position'];
     $joinDate = $_POST['joinDate'];
-    
+    $photo = $_FILES['playerImage'];
+    $photo_path = $_FILES['playerImage']['full_path'];
     
     // Debug: Check if file is received
     echo "<pre>";
@@ -20,7 +21,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     echo "</pre>";
 
     if(isset($_FILES['playerImage']) && $_FILES['playerImage']['error'] === 0) {
-        echo "Image got to the backend";
+      //  echo "Image got to the backend";
     } else {
         $_SESSION['image_size_error'] = "Please make sure your image size is 2mb or below";
         header('Location: /madinafc/mgmt7660/mgmtaddplayer.php');
@@ -42,10 +43,13 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     try {
         // File Upload Handling
-        $targetDir = "../uploads/images/";    
+        $targetDir = "../uploads/playerImages/";    
         $fileName = basename($_FILES['playerImage']['name']);
         $targetFilePath = $targetDir . $fileName;
-        $fileType = strtolower(pathinfo($targetFilePath, PATHINFO_EXTENSION));
+        $changedFileName = $_FILES['playerImage']['tmp_name'];
+        $fileType = (pathinfo($photo_path));
+        echo  $fileType['extension'];
+        die("This is a file type stop");
         $allowedTypes = array("jpg", "jpeg", "png");
 
         // Validate file type
@@ -54,6 +58,12 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
             header('Location: /madinafc/mgmt7660/mgmtaddplayer.php');
             exit;
         }
+
+         /*rename file before moving it to new dir
+        if(!rename("".$_FILES['playerImage']['name'].", ".$nationalID."")){
+            echo "failed to rename file";
+            die("Error renaming file: " . error_get_last()['message']);
+        } */
 
         // Move uploaded file
         if(!move_uploaded_file($_FILES["playerImage"]['tmp_name'], $targetFilePath)) {

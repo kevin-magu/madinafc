@@ -385,7 +385,7 @@
                         <td>9</td>
                     </tr>
                     <tr>
-                        <td>Muktar Osmihen/td>
+                        <td>Muktar Osmihen</td>
                         <td>Center Forward</td>
                         <td>9</td>
                     </tr>

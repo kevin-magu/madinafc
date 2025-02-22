@@ -90,7 +90,7 @@
         <form action="checkplayerindb.php" method='POST'>
         <?php
         if(isset($_SESSION['player_found'] )){
-            echo "<p class='success-message'>".$_SESSION['player_found'] ."</p>";
+            echo "<p class='success-message'>".$_SESSION['player_found']."</p>";
         }else if(isset($_SESSION['player_not_found'] )){
             echo "<p class='error-message'>".$_SESSION['player_not_found'] ." </p>";
         }

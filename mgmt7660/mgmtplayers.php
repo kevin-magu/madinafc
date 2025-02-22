@@ -1,8 +1,9 @@
 <?php 
     ini_set('display_errors', 1);
     include '../includes/connection.php';
-    $sqlQuery = "SELECT playerName,fieldNumber,position,joinDate FROM player";
+    $sqlQuery = "SELECT nationalID,playerName,fieldNumber,position,joinDate,filePath FROM player";
     $result = $connection->query($sqlQuery);
+
 ?>
 
 <!DOCTYPE html>
@@ -37,15 +38,19 @@ if($result -> num_rows > 0){
 
             <div class='playerbox'>
                 <div class='player-pic'>
+                  <img src=".$row['filePath']." alt=''>
                 </div>
                 <div class='player-info'>
-                    <p class='player-info-name'>". $row['playerName']. "</p>
-                    <p class='player-info-position'>". $row['position']. "</p>
+                    <p class='player-info-name'><span>NAME:</span>". $row['playerName']. "</p>
+                    <p class='player-info-position'><span>POSITION:</span>" . $row['position'].",".$row['fieldNumber']. "</p>
+                    <p class='player-info-position'><span>ID:</span>" . $row['nationalID']. "</p>
                 </div>
                 
             </div> 
         ";
     }
+}else{
+    echo  "<p class='player-info-position'>NO REGISTERED PLAYER. CLICK ADD PLAYER TO REGISTER PLAYERS</p>";
 }
 ?>
 </div>
