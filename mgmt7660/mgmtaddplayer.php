@@ -17,7 +17,7 @@
 <?php include './adminincludes/navbar.php' ?> 
 <p class="greetings">It's time to add new players to the team !</p>
 <div class="form-continer">
-    <form action="addplayerprocessing.php" method="POST">
+    <form action="addplayerprocessing.php" method="POST" enctype="multipart/form-data">
         <?php if(isset($_SESSION['player_added_success'])){
             echo "<p class='success-message'>" . $_SESSION['player_added_success'] . "</p>";
             unset($_SESSION['player_added_success']);
@@ -33,10 +33,10 @@
                 echo "<p class='error-message'>".$_SESSION['file_type_error']."</p>";
             }
         ?>
-        <input type="text" name='playerName' placeholder="Player Name" required>
-        <input type="number" name='nationalID' placeholder="National ID number" required>
-        <input type="number" name='fieldNumber' placeholder="Field Number" required>
-        <select type="text" name='position' placeholder="Position" required>
+        <input type="text" name='playerName' placeholder="Player Name" >
+        <input type="number" name='nationalID' placeholder="National ID number" >
+        <input type="number" name='fieldNumber' placeholder="Field Number" >
+        <select type="text" name='position' placeholder="Position" >
             <option value="Goalkeeper (GK)">Goalkeeper (GK)</option>
             <option value="Center-Back (CB)">Center-Back (CB)</option>
             <option value="Right-Back (RB)">Right-Back (RB)</option>
@@ -56,7 +56,7 @@
             <option value="Left Winger (LW)">Left Winger (LW)</option>>
         </select>    
         <input type="number" name='joinDate' placeholder="Year of joining">
-        <input type="file" placeholder="your profile photo" accept="image/*" onchange="previewImage(event)" name="playerImage" required>
+        <input type="file"  accept="image/*" onchange="previewImage(event)" name="playerImage" required>
         <button type="submit">Submit</button>   
     </form>
 
