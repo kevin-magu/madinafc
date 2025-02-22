@@ -16,13 +16,15 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     
     // Debug: Check if file is received
     echo "<pre>";
-    $_FILES['playerImage']['error'];
+    print_r ($_FILES['playerImage']);
     echo "</pre>";
 
     if(isset($_FILES['playerImage']) && $_FILES['playerImage']['error'] === 0) {
         echo "Image got to the backend";
     } else {
-        die("No image uploaded");
+        $_SESSION['image_size_error'] = "Please make sure your image size is 2mb or below";
+        header('Location: /madinafc/mgmt7660/mgmtaddplayer.php');
+        die("Make sure your image size is 2mb or belo");
     }
 
     // Check if user exists
@@ -74,8 +76,9 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit;
 
     } catch(Exception $e) {
-        $_SESSION['player_added_error'] = "Error adding player. Please try again.";
+        $_SESSION['player_added_error'] = "Error adding player. Please try again or contact admin.";
         header('Location: /madinafc/mgmt7660/mgmtaddplayer.php');
+        echo $e;
         exit;
     }
 }

@@ -247,9 +247,8 @@ nav p a:visited{
 .form-continer{
     width: 100%;
     display: flex;
-    
-    justify-content: center;
     gap: 50px;
+    justify-content: center;
 }
 
 form{
@@ -284,8 +283,7 @@ form input:focus , select:focus{
     font-weight: bold;
 }
 #imagePreview{
-    height: 200px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
     border-radius: 5px;
-    display: none;
 }

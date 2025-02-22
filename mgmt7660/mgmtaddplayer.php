@@ -17,6 +17,7 @@
 <?php include './adminincludes/navbar.php' ?> 
 <p class="greetings">It's time to add new players to the team !</p>
 <div class="form-continer">
+
     <form action="addplayerprocessing.php" method="POST" enctype="multipart/form-data">
         <?php if(isset($_SESSION['player_added_success'])){
             echo "<p class='success-message'>" . $_SESSION['player_added_success'] . "</p>";
@@ -31,7 +32,10 @@
                 echo "<p class='error-message'> ".$_SESSION['file_upload_error']."</p>";
             }else if($_SESSION['file_type_error']){
                 echo "<p class='error-message'>".$_SESSION['file_type_error']."</p>";
+            }else if($_SESSION['image_size_error']){
+                echo "<p class='error-message'>".$_SESSION['image_size_error']."</p>";
             }
+            
         ?>
         <input type="text" name='playerName' placeholder="Player Name" >
         <input type="number" name='nationalID' placeholder="National ID number" >
@@ -61,6 +65,7 @@
     </form>
 
     <div class="image-preview-container">
+    <p>Profile picture preview</p>
         <img src="" alt="" id="imagePreview" alt="Image Preview">
 
         <script>
@@ -81,6 +86,25 @@
             }
         </script>
     </div>
+    <div class="existingplayers">
+        <form action="checkplayerindb.php" method='POST'>
+        <?php
+        if(isset($_SESSION['player_found'] )){
+            echo "<p class='success-message'>".$_SESSION['player_found'] ."</p>";
+        }else if(isset($_SESSION['player_not_found'] )){
+            echo "<p class='error-message'>".$_SESSION['player_not_found'] ." </p>";
+        }
+        ;
+
+        ?>
+        <input type="number"  name="nationalID" placeholder="enter id number to check if player is already registered">
+        <button type="submit">Check</button>
+        </form>
+    </div>
 </div>    
 </body>
 </html>
+
+<?php
+session_unset();
+?>
