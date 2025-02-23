@@ -37,8 +37,8 @@ if($result -> num_rows > 0){
         echo "
 
             <div class='playerbox'>
-                <div class='player-pic'>
-                  <img src=".$row['filePath']." alt=''>
+                <div class='player-pic' style='background-image: url(".$row['filePath']."); background-repeat: no-repeat;background-size: contain; background-position:center; ' >
+                  
                 </div>
                 <div class='player-info'>
                     <p class='player-info-name'><span>NAME:</span>". $row['playerName']. "</p>

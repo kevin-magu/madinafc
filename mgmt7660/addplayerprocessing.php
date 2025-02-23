@@ -44,29 +44,32 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     try {
         // File Upload Handling
         $targetDir = "../uploads/playerImages/";    
-        $fileName = basename($_FILES['playerImage']['name']);
-        $targetFilePath = $targetDir . $fileName;
+        $fileName = basename($_FILES['playerImage']['tmp_name']);
         $changedFileName = $_FILES['playerImage']['tmp_name'];
         $fileType = (pathinfo($photo_path));
-        echo  $fileType['extension'];
-        die("This is a file type stop");
+        //echo $photo['full_path'];
+        $fileTypeExtension=$fileType['extension'];
+        $targetStorageFilePath = $targetDir . $fileName .".". $fileTypeExtension;
+        echo "THis is the target filepath". $targetStorageFilePath ."</br>";
         $allowedTypes = array("jpg", "jpeg", "png");
 
         // Validate file type
-        if(!in_array($fileType, $allowedTypes)) {
+        if(!in_array($fileTypeExtension, $allowedTypes)) {
             $_SESSION['file_type_error'] = "Only images are allowed!";
-            header('Location: /madinafc/mgmt7660/mgmtaddplayer.php');
+            die("Error moving file: " . error_get_last()['message']);
+           // header('Location: /madinafc/mgmt7660/mgmtaddplayer.php');
             exit;
         }
 
-         /*rename file before moving it to new dir
+        /*
         if(!rename("".$_FILES['playerImage']['name'].", ".$nationalID."")){
             echo "failed to rename file";
             die("Error renaming file: " . error_get_last()['message']);
         } */
-
+       
+       
         // Move uploaded file
-        if(!move_uploaded_file($_FILES["playerImage"]['tmp_name'], $targetFilePath)) {
+        if(!move_uploaded_file($photo['tmp_name'], $targetStorageFilePath)) {
             die("Error moving file: " . error_get_last()['message']);
         }
 
@@ -74,7 +77,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
         $query = "INSERT INTO player(playerName, nationalID, fieldNumber, position, joinDate, imageName, filePath) 
                   VALUES (?, ?, ?, ?, ?, ?, ?)"; 
         $stmt = $connection->prepare($query);
-        $stmt->bind_param("sssssss", $playerName, $nationalID, $fieldNumber, $position, $joinDate, $fileName, $targetFilePath);
+        $stmt->bind_param("sssssss", $playerName, $nationalID, $fieldNumber, $position, $joinDate, $fileName, $targetStorageFilePath);
 
         if($stmt->execute()) {
             $_SESSION['player_added_success'] = "Player added successfully!";
@@ -87,7 +90,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     } catch(Exception $e) {
         $_SESSION['player_added_error'] = "Error adding player. Please try again or contact admin.";
-        header('Location: /madinafc/mgmt7660/mgmtaddplayer.php');
+       header('Location: /madinafc/mgmt7660/mgmtaddplayer.php');
         echo $e;
         exit;
     }

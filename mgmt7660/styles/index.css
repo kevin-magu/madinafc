@@ -230,6 +230,7 @@ nav p a:visited{
 .player-pic{
     height: 65%;
     background-color: white;
+    background-size: contain;
 }
 
 .player-pic img{
