@@ -240,7 +240,7 @@
                         <td>President</td>
                     </tr>
                     <tr>
-                        <td>add Abdiqaliq Abdirahman EL CC</td>
+                        <td>Abdiqaliq Abdirahman EL CC</td>
                         <td>patron</td>
                     </tr>
                     <tr>
