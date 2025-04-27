@@ -239,6 +239,14 @@
                         <td>Farah Ali</td>
                         <td>President</td>
                     </tr>
+                    <tr>
+                        <td>add Abdiqaliq Abdirahman EL CC</td>
+                        <td>patronn</td>
+                    </tr>
+                    <tr>
+                        <td>Sirat</td>
+                        <td>Chairman</td>
+                    </tr>
                 </tbody>
             </table>
             <p class="table-title table-title2">SQUAD</p>
