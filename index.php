@@ -241,7 +241,7 @@
                     </tr>
                     <tr>
                         <td>add Abdiqaliq Abdirahman EL CC</td>
-                        <td>patronn</td>
+                        <td>patron</td>
                     </tr>
                     <tr>
                         <td>Sirat</td>
