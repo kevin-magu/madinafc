@@ -1,8 +1,8 @@
 <?php 
 $server = "localhost";
-$username = "root";
-$password = "root";
-$database = "madina_test";// 
+$username = "greenglo";
+$password = "Greeglobe!@#$%^&*()_+";
+$database = "greenglo_madina_test";// 
 
 $connection = mysqli_connect($server, $username, $password, $database);
 if($connection){
