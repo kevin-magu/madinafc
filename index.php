@@ -564,10 +564,11 @@
     <div class="patners-logos-wrapper">
         <div class="ggr-logo-wrapper"> 
             <div class="logo-div ggr-logo"></div>
-                <p>Green Globe Realisation</p>
+                <p>Nobility of Nature</p>
             </div>
+        
         <div class="kws-logo-wrapper">
-            <img src="./images/kws-logo.png" alt="" class="kws-logo-image">
+            <img src="./images/nobility-1.png" alt="" class="kws-logo-image">
             <p>Kenya Wildlife Service</p>
         </div>
     </div>
