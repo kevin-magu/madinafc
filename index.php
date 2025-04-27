@@ -235,10 +235,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Farah Ali</td>
-                        <td>President</td>
-                    </tr>
+            
                     <tr>
                         <td>Abdiqaliq Abdirahman EL CC</td>
                         <td>patron</td>
@@ -246,6 +243,10 @@
                     <tr>
                         <td>Sirat</td>
                         <td>Chairman</td>
+                    </tr>
+                    <tr>
+                        <td>Zakaria</td>
+                        <td>Coach</td>
                     </tr>
                 </tbody>
             </table>
